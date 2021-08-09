@@ -1,0 +1,196 @@
+.menu, #divisions{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient( 
+        135deg
+        , rgba(50, 151, 203, 1) 0%, rgba(49, 49, 100, 1) 100% );
+}
+.menu{
+    position: unset;
+    display: block;
+    z-index: 0;
+}
+.plataformasButton{
+    margin: 40px 0 0 95px;
+    width: 12em;
+    margin:0;
+    right: unset;
+    left: 10px;
+    top:10px;
+    position:absolute;
+}
+.plataformasButton:hover{
+    width: 11em;
+}
+#haciaDivisiones,#haciaCursos{
+    display:none;
+}
+#curses{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:3em;
+}
+#curses h1{
+    font-size:2.5em;
+}
+.cursesgrill{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap:24px;
+}
+.cursesgrill div{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.cursesgrill div h3, #divisions div div h3{
+    margin:0;
+    color: white;
+    text-align: center;
+}
+.curseContainer{
+    text-align: center;
+    height:10em;
+    width: 10em;
+    transition:.3s;
+}
+.curseContainer:hover{
+    height: 11em;
+    width:11em;
+}
+.curseContainer img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    background: unset;
+}
+#divisions{
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    padding-top:3em;
+    transition: .3s;
+}
+#divisions div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition:.3s;
+    flex-wrap: wrap;
+}
+#divisions div div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    margin: 1em 1em 0;
+}
+.asignaturas{
+    background:linear-gradient( 
+        135deg
+        , rgba(50, 151, 203, 1) 0%, rgba(49, 49, 100, 1) 100% );
+}
+.asign{
+    display:none;
+    padding-top:4em;
+}
+.asign ul{
+    padding: 0;
+    margin: 0 0 0 2em;
+}
+.asign ul li{
+    list-style: none;
+    margin: 2em 0;
+}
+.asign ul li:first-child{
+    margin-top: 1em;
+}
+.asign ul li:LAST-child{
+    padding-bottom: 2em;
+}
+.asign ul li a{
+    font-size:2em;
+    text-decoration: none;
+    color:white;
+    transition:.3s;
+}
+.asign ul li a:hover{
+    color:#16162d;
+    font-size: 2.2em;
+}
+@media screen and (max-width:1024px){
+    .plataformasButton a{
+        display:block
+    }
+    .curseContainer{
+        width: 8em;
+        height: 8em;
+    }
+}
+@media screen and (max-width:895px){
+      .plataformasButton{
+        width: 8em;
+        height: 4em;
+        padding:0;
+      }
+      .plataformasButton:hover{
+        width: 5em;
+        height: 5em;
+      }
+      .plataformasButton:active{
+        width: 4em;
+        height: 4em;
+      }
+      .cursesgrill{
+        grid-template-columns: repeat(3,1fr);
+        }
+}
+@media screen and (max-width:768px){
+    h3{
+        font-size: 14px;
+    }
+    .curseContainer{
+        width: 5em;
+        height: 5em;
+    }
+}
+@media screen and (max-width:425px){
+    .cursesgrill{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:24px;
+    }
+}
+@media screen and (max-width:767px){
+    .curses h1{
+        margin: 0 0 .5em;
+    }
+    .asign{
+        padding-top: 3em;
+    }
+    .plataformasButton{
+        height: 3em;
+        width: 6.5em;
+    }
+    .plataformasButton:hover{
+        height: 3em;
+        width: 6.5em;
+    }
+    .plataformasButton:active{
+        height: 2.8em;
+        width: 6.3em;
+    }
+    .plataformasButton a{
+        font-size:24px;
+    }
+}
+@media screen and (max-width:375px){
+    .asign ul{
+        margin: 0 0 0 1em;
+    }
+}
