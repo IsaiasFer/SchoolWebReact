@@ -5,9 +5,9 @@ import Autority from './autority'
 class Autorities extends React.Component {
   render() {
     return (
-        <div class="fondoDegradado">
-        <h1 class="pageTitle">Autoridades E.E.T.N° 3141</h1>
-        <section class="authorities">
+        <div className="fondoDegradado">
+        <h1 className="pageTitle">Autoridades E.E.T.N° 3141</h1>
+        <section className="authorities">
           <Autority imageURL='https://i.imgur.com/zCYivHdm.jpg' name='Prof. Jorge Enrique Pacheco' position='Director EETN° 3141'/>
           <Autority imageURL='https://i.imgur.com/CEZC0oK.jpg' name='Prof Mariana Gimenez' position='Vicedirectora TM'/>
           <Autority imageURL='https://i.imgur.com/IvHuKAF.jpg' name='Prof. Martin cardozo' position='Vicedirector TT'/>

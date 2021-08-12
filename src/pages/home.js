@@ -1,25 +1,27 @@
 import React from "react";
 
-import Header from "../components/header";
 import Hero from "../components/hero";
 import News from '../components/news'
 import About from '../components/about'
-import Footer from '../components/footer'
-import PrePlatform from '../components/prePlatform'
 
 import "../styles/landingStyles.css";
 
 class Home extends React.Component {
+/*   componentDidMount(){
+    var navBar=document.querySelector('.navContainer')
+    navBar.classList.add('delete')
+  }
+  componentWillUnmount(){
+    var navBar=document.querySelector('.navContainer')
+    navBar.classList.remove('delete')
+  } */
   render() {
     return (
-      <div className="appContent">
-        <PrePlatform/>
-        <Header />
+      <React.Fragment>
         <Hero />
-        <News/>
-        <About/>
-        <Footer/>
-      </div>
+        <News />
+        <About />
+      </React.Fragment>
     );
   }
 }

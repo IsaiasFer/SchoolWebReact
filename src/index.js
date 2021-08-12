@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./components/app";
 
-/* import Home from './pages/home' */
-/* import Institucional from './pages/institucional' */
-import Fotos from './pages/fotos'
 
-import "./styles/estilos.css";
+
+import "./styles/globalStyles.css";
 
 const appContainer = document.getElementById("app");
 
-ReactDOM.render(<Fotos />, appContainer);
+ReactDOM.render(<App />, appContainer);

@@ -3,9 +3,9 @@ import React from "react";
 class PhotosContent extends React.Component {
   render() {
     return (
-        <section class="content">
-        <h1 class="pageTitle">Galería de Fotos</h1>
-      <section class="photos">
+        <section className="content">
+        <h1 className="pageTitle">Galería de Fotos</h1>
+      <section className="photos">
           <figure>
               <img src="https://i.imgur.com/KooRsjQ.png" alt=""/>
           </figure>

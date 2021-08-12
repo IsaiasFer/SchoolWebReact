@@ -70,6 +70,9 @@ header h1 {
   background: unset;
 }
 /* ----END-HEADER----- */
+.delete{
+  display: none;
+}
 
 /* ----START-HERO----- */
 
@@ -106,6 +109,13 @@ figure {
   font-size: 30px;
   padding: 0;
 }
+.list ul li{
+  font-size: 30px;
+  transition: .15s;
+}
+.list ul li:active{
+  font-size:20px;
+}
 .list ul li a {
   text-shadow: 2px 2px 6px #000000;
   text-decoration: none;
@@ -117,6 +127,7 @@ figure {
   font-size:1.1em
 }
 .navContainer {
+  height: 3.4em;
   width: 100%;
   background-color: #16162d;
 }
@@ -145,7 +156,7 @@ figure {
   width: 17em;
   height:4em;
 }
-.plataformasButton a {
+.plataformasButton span {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 30px;
   font-weight: bold;
@@ -397,7 +408,7 @@ svg {
   }
 }
 @media screen and (max-width:890px){
-  .plataformasButton a{
+  .plataformasButton span{
     display: none;
   }
   .plataformasButton{

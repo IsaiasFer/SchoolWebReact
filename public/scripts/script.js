@@ -1,5 +1,8 @@
-const PLATFORM=document.querySelector(".plataformasButton");
-const MENU=document.querySelector(".menu");
+var PLATFORMS=document.querySelectorAll('.plataformasButton');
+PLATFORMS=[...PLATFORMS]
+PLATFORMS=PLATFORMS.reverse()
+const PLATFORM=PLATFORMS[0]
+var MENU=document.querySelector(".menu");
 function aparecer(){
     if(MENU.classList.contains("isActive")){
         MENU.classList.remove("isActive")
