@@ -3,14 +3,14 @@
   display: grid;
   grid-template-columns: 30% 60% 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "column1Container column2Container .";
+  grid-template-areas: 'column1Container column2Container .';
   height: 90vh;
   width: 100%;
   background: linear-gradient(
-      135deg,
-      rgba(50, 151, 203, 1) 0%,
-      rgba(49, 49, 100, 1) 100%
-      );
+    135deg,
+    rgba(50, 151, 203, 1) 0%,
+    rgba(49, 49, 100, 1) 100%
+  );
   justify-items: center;
   align-items: center;
   color: white;
@@ -34,78 +34,79 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "buttonsContainer";
+  grid-template-areas: 'buttonsContainer';
   height: 90vh;
   width: 100%;
   background: linear-gradient(
-      135deg,
-      rgba(50, 151, 203, 1) 0%,
-      rgba(49, 49, 100, 1) 100%
-      );
+    135deg,
+    rgba(50, 151, 203, 1) 0%,
+    rgba(49, 49, 100, 1) 100%
+  );
   justify-items: center;
   align-items: center;
   color: white;
   font-family: Segoe UI;
   font-weight: 400;
-  font-size: 1.4em
+  font-size: 1.4em;
 }
 .buttonsContainer {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 20% 1fr 20% 1fr 20% 1fr 20% 15%;
-  grid-template-areas: "."
-                       "titleAcademic"
-                       "."
-                       "studyPlan"
-                       "."
-                       "studyProgram"
-                       "."
-                       "infoTeachers"
-                       ".";
+  grid-template-areas:
+    '.'
+    'titleAcademic'
+    '.'
+    'studyPlan'
+    '.'
+    'studyProgram'
+    '.'
+    'infoTeachers'
+    '.';
   height: 90vh;
   width: 100%;
   justify-items: center;
   align-items: center;
 }
-.titleAcademic{
+.titleAcademic {
   width: 60%;
   height: 60%;
   grid-area: titleAcademic;
   border-radius: 100px;
-  background: #314D81;    
+  background: #314d81;
   display: flex;
   cursor: pointer;
   align-items: center;
   justify-content: center;
 }
-.studyPlan{
+.studyPlan {
   width: 60%;
   height: 60%;
   grid-area: studyPlan;
   border-radius: 100px;
-  background: #314D81;
+  background: #314d81;
   display: flex;
   cursor: pointer;
   align-items: center;
   justify-content: center;
 }
-.studyProgram{
+.studyProgram {
   width: 60%;
   height: 60%;
   grid-area: studyProgram;
   border-radius: 100px;
-  background: #314D81;
+  background: #314d81;
   display: flex;
   cursor: pointer;
   align-items: center;
   justify-content: center;
 }
-.infoTeachers{
+.infoTeachers {
   width: 60%;
   height: 60%;
   grid-area: infoTeachers;
   border-radius: 100px;
-  background: #314D81;
+  background: #314d81;
   display: flex;
   cursor: pointer;
   align-items: center;
@@ -140,7 +141,7 @@
   height: 10%;
   width: auto;
 }
-.optionsStudyProgramContent button{
+.optionsStudyProgramContent button {
   background: rgba(49, 49, 100, 1);
   width: 15%;
 }
@@ -189,7 +190,7 @@
 .optionInfoTeachersContent button {
   background: rgba(49, 49, 100, 1);
   width: 15%;
-} 
+}
 .academic button {
   outline: none;
   border: none;
@@ -200,10 +201,10 @@
   cursor: pointer;
 }
 button:hover {
-  background: #3297CB;
+  background: #3297cb;
 }
 button:active {
-  background: #16162D;
+  background: #16162d;
 }
 
 /* .column1Container a {
@@ -216,10 +217,10 @@ button:active {
 } */
 
 .academic a:hover {
-  background: #3297CB;
+  background: #3297cb;
 }
 .academic a:active {
-  background: #16162D;
+  background: #16162d;
 }
 .column2Container a {
   outline: none;
@@ -240,7 +241,7 @@ button:active {
 /* -- ----------END-ACADEMIC-CSS------------ -- */
 
 /* ----------------------------START-ACADEMIC-RESPONSIVE--------------------- */
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .academic {
     grid-template-columns: 30% 68% 1fr;
   }
@@ -250,17 +251,17 @@ button:active {
   }
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width: 425px) {
   .academic {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "column1Container";                  
+    grid-template-areas: 'column1Container';
     justify-items: center;
     align-items: center;
     color: white;
   }
-  .column1Container a{
+  .column1Container a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -270,15 +271,16 @@ button:active {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 20% 1fr 20% 1fr 20% 1fr 20% 15%;
-    grid-template-areas: "."
-                         "titleAcademic"
-                         "."
-                         "studyPlan"
-                         "."
-                         "studyProgram"
-                         "."
-                         "infoTeachers"
-                         ".";
+    grid-template-areas:
+      '.'
+      'titleAcademic'
+      '.'
+      'studyPlan'
+      '.'
+      'studyProgram'
+      '.'
+      'infoTeachers'
+      '.';
     height: 90vh;
     width: 100%;
     justify-items: center;
@@ -318,12 +320,12 @@ button:active {
   .infoTeachersContent h1 {
     font-size: 30px;
     margin: 0;
-}
+  }
   .infoTeachersContent p {
     font-size: 30px;
   }
   .backButtonDivices425px {
-    background: #3297CB;
+    background: #3297cb;
     z-index: 0;
     border-radius: 100px;
     width: 60px;
@@ -331,15 +333,15 @@ button:active {
     position: absolute;
     top: 40px;
     right: 0;
-}
   }
 }
-@media screen and (max-width:321px) {
+/* } */
+/* @media screen and (max-width:321px) {
   .academic button {
     font-size: .85em;
   }
   .column1Container a {
     font-size: .9em;
   }
-}
+} */
 /* ----------------------------END-ACADEMIC-RESPONSIVE--------------------- */

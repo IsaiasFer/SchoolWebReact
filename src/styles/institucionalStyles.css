@@ -2,8 +2,8 @@
   color: #16162d;
   font-size: 48px;
   margin-left: 3em;
-  margin-top:0;
-  padding-top:0.5em;
+  margin-top: 0;
+  padding-top: 0.5em;
 }
 h3 {
   font-size: 30px;
@@ -20,7 +20,7 @@ h4 {
   display: grid;
   text-align: center;
   padding: 0 5em 3em;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   column-gap: normal;
   row-gap: 3em;
 }
@@ -41,54 +41,58 @@ h4 {
   height: 100%;
   object-fit: cover;
 }
-.fondoDegradado{
-  background: linear-gradient(135deg, rgba(50,151,203,1) 0%, rgba(49,49,100,1) 100%);
-  margin:0;
+.fondoDegradado {
+  background: linear-gradient(
+    135deg,
+    rgba(50, 151, 203, 1) 0%,
+    rgba(49, 49, 100, 1) 100%
+  );
+  margin: 0;
 }
-@media screen and (max-width:1024px){
-  .pageTitle{
-    font-size:40px
+@media screen and (max-width: 1024px) {
+  .pageTitle {
+    font-size: 40px;
   }
-  h3{
+  h3 {
     font-size: 1.5em;
   }
-  h4{
+  h4 {
     font-size: 1.3em;
   }
 }
-@media screen and (max-width:1024px){
-  .authorities{
-    grid-template-columns: repeat(3,1fr);
+@media screen and (max-width: 1024px) {
+  .authorities {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (max-width:768px){
-  h3{
+@media screen and (max-width: 768px) {
+  h3 {
     font-size: 1.29em;
   }
-  h4{
+  h4 {
     font-size: 1em;
   }
 }
-@media screen and (max-width:768px){
-  .authorities{
-    grid-template-columns: repeat(2,1fr);
+@media screen and (max-width: 768px) {
+  .authorities {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (max-width:580px){
-  .authorities{
+@media screen and (max-width: 580px) {
+  .authorities {
     grid-template-columns: 1fr;
-    padding:0;
+    padding: 0;
   }
-  .pageTitle{
-    margin:0 0 .5em;
+  .pageTitle {
+    margin: 0 0 0.5em;
     text-align: center;
   }
-  .authorities:last-child{
+  .authorities:last-child {
     padding-bottom: 2em;
   }
 }
-@media screen and (max-width:375px){
-  .pageTitle{
+@media screen and (max-width: 375px) {
+  .pageTitle {
     font-size: 30px;
   }
 }
