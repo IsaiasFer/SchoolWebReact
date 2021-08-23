@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { divisiones } from "../scripts/functions";
+import PlataformaContainer from "./platformContainer";
 
 class NavBar extends React.Component {
+  componentDidMount(){
+    /* divisiones() */
+}
   render() {
     return (
         <nav className="list">
@@ -21,6 +26,7 @@ class NavBar extends React.Component {
               transform="translate(-2.25 -4.5)" fill="#fff" />
           </svg>
           <span>PLATAFORMAS</span>
+          <PlataformaContainer isOpen="true"/>
         </button>
       </nav>
     );

@@ -1,16 +1,16 @@
-.menu, #divisions{
+.menuPlatform, #divisions{
     width: 100%;
     height: 100vh;
     background:linear-gradient( 
         135deg
         , rgba(50, 151, 203, 1) 0%, rgba(49, 49, 100, 1) 100% );
 }
-.menu{
+.menuPlatform{
     position: unset;
     display: block;
     z-index: 0;
 }
-.plataformasButton{
+/* .plataformasButton{
     margin: 40px 0 0 95px;
     width: 12em;
     margin:0;
@@ -18,7 +18,7 @@
     left: 10px;
     top:10px;
     position:absolute;
-}
+} */
 .plataformasButton:hover{
     width: 11em;
 }
