@@ -7,7 +7,7 @@ import '../styles/platform.css'
 function PlataformaContainer(props){
     if (props.isOpen) {
       return ReactDOM.createPortal(
-        <Plataforma/>,document.querySelector("#plataforma")
+        <Plataforma onClose={props.onClose} onOpen={props.onOpen}/>,document.querySelector("#plataforma")
       );
     }else{
         return null

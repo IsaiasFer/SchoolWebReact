@@ -1,5 +1,4 @@
 import React from "react";
-
 /* import NavBar from './navBar' */
 
 class Hero extends React.Component {

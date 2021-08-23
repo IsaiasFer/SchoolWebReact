@@ -5,13 +5,18 @@ import Fotos from '../pages/fotos'
 import Institucional from '../pages/institucional'
 import Header from '../components/header'
 import PrePlatform from './prePlatform';
-/* import NavBar from './navBar'; */
 import Footer from './footer';
 import NavBarContainer from './navBarContainer';
 
+import '../styles/platform.css'
+import { burguerButton, menuLateral } from '../scripts/functions';
+
 
 class App extends React.Component {
-
+    componentDidMount(){
+        burguerButton()
+        menuLateral()
+    }
     render() {
         return (
             <BrowserRouter>

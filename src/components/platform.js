@@ -1,12 +1,15 @@
 import React from "react";
-import { showContentAsign, showContentDivisions } from "../scripts/functions";
+import { divisiones, showContentAsign} from "../scripts/functions";
 import Curso from "./curso";
 
 class Plataforma extends React.Component {
-  render() {
+  componentDidMount(){
+    divisiones()
+}
+  render(props) {
     return (
       <section className="menuPlatform">
-        <button className="plataformasButton">
+        <button className="plataformasButton2" onClick={this.props.onClose}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="31.5"
@@ -21,7 +24,7 @@ class Plataforma extends React.Component {
               fill="#fff"
             />
           </svg>
-          <a href="/">Volver</a>
+          <span href="/">Volver</span>
         </button>
         <div className="curses" id="curses">
           <h1>Elige tu curso</h1>
