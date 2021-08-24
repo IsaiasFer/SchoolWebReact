@@ -1,11 +1,90 @@
-import React, { Component } from 'react';
+import React, { Component, createRef } from 'react';
+// import { contents } from './functions';
 
 export default class academicSection extends Component {
+  constructor(props) {
+    super(props);
+    // --------BUTTONS-CONTENTS----------
+    this.titleContent = createRef();
+    this.studyPlanContent = createRef();
+    this.studyProgramContent = createRef();
+    this.infoTeachersContent = createRef();
+    // --------BUTTONS-CONTENTS----------
+    // --------BUTTONS-CONTENT-STUDY-PROGRAM----------
+    this.firstYearContentCB = createRef();
+    this.secondYearContentCB = createRef();
+    this.firstYearContentCS = createRef();
+    this.secondYearContentCS = createRef();
+    this.thirdYearContentCS = createRef();
+    this.fourthYearContentCS = createRef();
+    // --------BUTTONS-CONTENT-STUDY-PROGRAM----------
+    // --------BUTTONS-CONTENT-INFO-TEACHERS----------
+    this.infoTeachersContent1 = createRef();
+    this.infoTeachersContent2 = createRef();
+    // --------BUTTONS-CONTENT-INFO-TEACHERS----------
+  }
   render() {
+    this.handleClickTeachers = (e, numberLinks) => {
+      const infoTeachersContent1 = this.infoTeachersContent1;
+      const infoTeachersContent2 = this.infoTeachersContent2;
+
+      let infoTeachersContents = [infoTeachersContent1, infoTeachersContent2];
+
+      for (let i = 0; i < infoTeachersContents.length; i++) {
+        infoTeachersContents[i].current.style.display = 'none';
+      }
+      infoTeachersContents[numberLinks].current.style.display = 'inline-block';
+    };
+
+    this.handleClickStudy = (e, numberLinks) => {
+      const firstYearContentCB = this.firstYearContentCB;
+      const secondYearContentCB = this.secondYearContentCB;
+      const firstYearContentCS = this.firstYearContentCS;
+      const secondYearContentCS = this.secondYearContentCS;
+      const thirdYearContentCS = this.thirdYearContentCS;
+      const fourthYearContentCS = this.fourthYearContentCS;
+
+      let programContent = [
+        firstYearContentCB,
+        secondYearContentCB,
+        firstYearContentCS,
+        secondYearContentCS,
+        thirdYearContentCS,
+        fourthYearContentCS,
+      ];
+
+      for (let i = 0; i < programContent.length; i++) {
+        programContent[i].current.style.display = 'none';
+      }
+      programContent[numberLinks].current.style.display = 'inline-block';
+    };
+
+    this.handleClickContents = (e, numberContent) => {
+      const titleContent = this.titleContent;
+      const studyPlanContent = this.studyPlanContent;
+      const studyProgramContent = this.studyProgramContent;
+      const infoTeachersContent = this.infoTeachersContent;
+
+      let contents = [
+        titleContent,
+        studyPlanContent,
+        studyProgramContent,
+        infoTeachersContent,
+      ];
+
+      for (let i = 0; i < contents.length; i++) {
+        contents[i].current.style.display = 'none';
+      }
+      contents[numberContent].current.style.display = 'inline-block';
+    };
+
     return (
       <React.Fragment>
-        <section class="academic" id="academic">
-          <button class="backButtonDivices425px" id="backButtonDivices425px">
+        <section className="academic" id="academic">
+          <button
+            className="backButtonDivices425px"
+            id="backButtonDivices425px"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="31.504"
@@ -21,28 +100,30 @@ export default class academicSection extends Component {
               />
             </svg>
           </button>
-          <div class="column1Container" id="column1Container">
-            <div class="buttonsContainer">
+
+          <div className="column1Container" id="column1Container">
+            <div className="buttonsContainer">
               <a
                 id="openTitle"
-                onclick="showContentButtons(0)"
-                class="titleAcademic"
+                onClick={(e) => this.handleClickContents(e, 0)}
+                className="titleAcademic"
+                // href={none}
               >
                 Titulo
               </a>
 
               <a
                 id="openStudyPlan"
-                onclick="showContentButtons(1)"
-                class="studyPlan"
+                onClick={(e) => this.handleClickContents(e, 1)}
+                className="studyPlan"
               >
                 Plan de estudio
               </a>
 
               <a
                 id="openStudyProgram"
-                onclick="showContentButtons(2)"
-                class="studyProgram"
+                onClick={(e) => this.handleClickContents(e, 2)}
+                className="studyProgram"
               >
                 {' '}
                 Programa de estudio
@@ -50,85 +131,97 @@ export default class academicSection extends Component {
 
               <a
                 id="openTeachersInfo"
-                onclick="showContentButtons(3)"
-                class="infoTeachers"
+                onClick={(e) => this.handleClickContents(e, 3)}
+                className="infoTeachers"
               >
                 Info profesores
               </a>
             </div>
           </div>
 
-          <div class="column2Container" id="column2Container">
+          <div className="column2Container" id="column2Container">
             <iframe
-              class="titleContent"
+              className="titleContent"
               id="titleContent"
-              src="../assets/images/academic/BOLETIN OFICIAL SALTA - DECRETO N° 561_11.pdf"
+              ref={this.titleContent}
+              src="https://portaldelasescuelas.org/wp-content/uploads/2015/08/Caperucita-Roja-COMPLETO-ilovepdf-compressed.pdf"
+              title="PDF"
             ></iframe>
 
             <iframe
-              class="studyPlanContent"
+              className="studyPlanContent"
               id="studyPlanContent"
-              src="../assets/images/academic/curriculatecnica.pdf"
+              ref={this.studyPlanContent}
+              src="https://www.cultura.gob.cl/wp-content/uploads/2014/01/un-cuento-al-dia-antologia.pdf"
+              title="PDF"
             ></iframe>
 
-            <div class="studyProgramContent" id="studyProgramContent">
-              <div class="optionsStudyProgramContent">
+            <div
+              className="studyProgramContent"
+              id="studyProgramContent"
+              ref={this.studyProgramContent}
+            >
+              <div className="optionsStudyProgramContent">
                 <button
                   type="button"
-                  class="firstYearCB"
+                  className="firstYearCB"
                   id="openFirstYearContentCB"
-                  onclick="showContentStudyProgram(0)"
+                  onClick={(e) => this.handleClickStudy(e, 0)}
                 >
                   1ºCB
                 </button>
 
                 <button
                   type="button"
-                  class="secondYearCB"
+                  className="secondYearCB"
                   id="openSecondYearContentCB"
-                  onclick="showContentStudyProgram(1)"
+                  onClick={(e) => this.handleClickStudy(e, 1)}
                 >
                   2ºCB
                 </button>
 
                 <button
                   type="button"
-                  class="primerAñoCS"
+                  className="primerAñoCS"
                   id="openFirstYearContentCS"
-                  onclick="showContentStudyProgram(2)"
+                  onClick={(e) => this.handleClickStudy(e, 2)}
                 >
                   1ºCS
                 </button>
 
                 <button
                   type="button"
-                  class="secondYearCS"
+                  className="secondYearCS"
                   id="openSecondYearContentCS"
-                  onclick="showContentStudyProgram(3)"
+                  onClick={(e) => this.handleClickStudy(e, 3)}
                 >
                   2ºCS
                 </button>
 
                 <button
                   type="button"
-                  class="thirdYearCS"
+                  className="thirdYearCS"
                   id="openThirdYearContentCS"
-                  onclick="showContentStudyProgram(4)"
+                  onClick={(e) => this.handleClickStudy(e, 4)}
                 >
                   3ºCS
                 </button>
 
                 <button
                   type="button"
-                  class="fourthYearoCS"
+                  className="fourthYearoCS"
                   id="openFourthYearContentCS"
-                  onclick="showContentStudyProgram(5)"
+                  onClick={(e) => this.handleClickStudy(e, 5)}
                 >
                   4ºCS
                 </button>
               </div>
 
-              <div class="firstYearContentCB" id="firstYearContentCB">
+              <div
+                className="firstYearContentCB"
+                id="firstYearContentCB"
+                ref={this.firstYearContentCB}
+              >
                 <h1>Primer Año Ciclo Basico </h1>
 
                 <p>
@@ -152,7 +245,11 @@ export default class academicSection extends Component {
                 </p>
               </div>
 
-              <div class="secondYearContentCB" id="secondYearContentCB">
+              <div
+                className="secondYearContentCB"
+                id="secondYearContentCB"
+                ref={this.secondYearContentCB}
+              >
                 <h1>Segundo Año Ciclo Basico </h1>
 
                 <p>
@@ -196,7 +293,11 @@ export default class academicSection extends Component {
                 </p>
               </div>
 
-              <div class="firstYearContentCS" id="firstYearContentCS">
+              <div
+                className="firstYearContentCS"
+                id="firstYearContentCS"
+                ref={this.firstYearContentCS}
+              >
                 <h1>Primer Año Ciclo Superior </h1>
 
                 <p>
@@ -210,7 +311,11 @@ export default class academicSection extends Component {
                 </p>
               </div>
 
-              <div class="secondYearContentCS" id="secondYearContentCS">
+              <div
+                className="secondYearContentCS"
+                id="secondYearContentCS"
+                ref={this.secondYearContentCS}
+              >
                 <h1>Segundo Año Ciclo Superior </h1>
 
                 <p>
@@ -224,37 +329,53 @@ export default class academicSection extends Component {
                 </p>
               </div>
 
-              <div class="thirdYearContentCS" id="thirdYearContentCS">
+              <div
+                className="thirdYearContentCS"
+                id="thirdYearContentCS"
+                ref={this.thirdYearContentCS}
+              >
                 <h1> Tercero Año Ciclo Superior </h1>
               </div>
 
-              <div class="fourthYearContentCS" id="fourthYearContentCS">
+              <div
+                className="fourthYearContentCS"
+                id="fourthYearContentCS"
+                ref={this.fourthYearContentCS}
+              >
                 <h1>Cuarto Año Ciclo Superior </h1>
               </div>
             </div>
 
-            <div class="infoTeachersContent" id="infoTeachersContent">
-              <div class="optionInfoTeachersContent">
+            <div
+              className="infoTeachersContent"
+              id="infoTeachersContent"
+              ref={this.infoTeachersContent}
+            >
+              <div className="optionInfoTeachersContent">
                 <button
                   type="button"
-                  class="infoTeachers1"
+                  className="infoTeachers1"
                   id="opentInfoTeachersContent1"
-                  onclick="showContentInfoTeachers(0)"
+                  onClick={(e) => this.handleClickTeachers(e, 0)}
                 >
                   1
                 </button>
 
                 <button
                   type="button"
-                  class="infoTeachers2"
+                  className="infoTeachers2"
                   id="opentInfoTeachersContent2"
-                  onclick="showContentInfoTeachers(1)"
+                  onClick={(e) => this.handleClickTeachers(e, 1)}
                 >
                   2
                 </button>
               </div>
 
-              <div class="infoTeachersContent1" id="infoTeachersContent1">
+              <div
+                className="infoTeachersContent1"
+                id="infoTeachersContent1"
+                ref={this.infoTeachersContent1}
+              >
                 <h1>Jornada 28-02-2020 Descargas: </h1>
 
                 <p>
@@ -296,7 +417,11 @@ export default class academicSection extends Component {
                 </p>
               </div>
 
-              <div class="infoTeachersContent2" id="infoTeachersContent2">
+              <div
+                className="infoTeachersContent2"
+                id="infoTeachersContent2"
+                ref={this.infoTeachersContent2}
+              >
                 <p>
                   Descargar:{' '}
                   <a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/Cartilla%20para%20Ingresantes%202019.pdf">

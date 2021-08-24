@@ -52,7 +52,7 @@
 .buttonsContainer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 20% 1fr 20% 1fr 20% 1fr 20% 15%;
+  grid-template-rows: 1fr 20% 1fr 20% 1fr 20% 1fr 20% 1fr;
   grid-template-areas:
     '.'
     'titleAcademic'
@@ -115,12 +115,13 @@
 .titleContent {
   width: 100%;
   height: 100%;
+  background: #e70e0e;
   display: none;
-  /* display: flex; */
 }
 .studyPlanContent {
   width: 100%;
   height: 100%;
+  background: #70e70e;
   display: none;
 }
 /* -- ----------START-STUDY-PROGRAM-CONTENT------------ -- */
@@ -130,12 +131,14 @@
   display: none;
 }
 .studyProgramContent h1 {
-  margin: 0;
+  margin: 0.5em;
   font-size: 1.8em;
+  color: gold;
 }
 .studyProgramContent p {
   font-size: 1.4em;
   font-weight: 600;
+  margin: 1em;
 }
 .optionsStudyProgramContent {
   height: 10%;
@@ -179,10 +182,12 @@
 .infoTeachersContent p {
   font-size: 1.4em;
   font-weight: 600;
+  margin: 1em;
 }
 .infoTeachersContent h1 {
+  margin: 0.5em;
   font-size: 1.8em;
-  margin: 0;
+  color: gold;
 }
 .optionInfoTeachersContent {
   width: auto;
@@ -199,6 +204,7 @@
   font-weight: 400;
   font-size: 1.4em;
   cursor: pointer;
+  margin: 0 1% 0 0;
 }
 button:hover {
   background: #3297cb;
@@ -335,13 +341,12 @@ button:active {
     right: 0;
   }
 }
-/* } */
-/* @media screen and (max-width:321px) {
+@media screen and (max-width: 321px) {
   .academic button {
-    font-size: .85em;
+    font-size: 0.85em;
   }
   .column1Container a {
-    font-size: .9em;
+    font-size: 0.9em;
   }
-} */
+}
 /* ----------------------------END-ACADEMIC-RESPONSIVE--------------------- */
