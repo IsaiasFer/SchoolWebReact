@@ -156,7 +156,7 @@ figure {
   width: 17em;
   height:4em;
 }
-.plataformasButton span {
+.plataformasButton span ,.plataformasButton2 span{
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 30px;
   font-weight: bold;
@@ -336,7 +336,11 @@ svg {
 .platforms li{
   list-style: none;
 }
-.platforms li a img{
+.platforms li button{
+  background: unset;
+  border:none
+}
+.platforms li button img{
   height: 5em;
   width: 10em;
   object-fit: contain;
@@ -344,7 +348,7 @@ svg {
   border-radius: 15px;
   transition: .3s;
 }
-.platforms li a img:hover{
+.platforms li button img:hover{
   height: 6em;
   width: 11em;
 }

@@ -8,4 +8,4 @@ import "./styles/globalStyles.css";
 
 const appContainer = document.getElementById("app");
 
-ReactDOM.render(<App />, appContainer);
+ReactDOM.render(<App/>, appContainer);

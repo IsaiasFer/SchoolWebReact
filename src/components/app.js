@@ -5,7 +5,6 @@ import Fotos from '../pages/fotos';
 import Institucional from '../pages/institucional';
 import Header from '../components/header';
 import PrePlatform from './prePlatform';
-/* import NavBar from './navBar'; */
 import Footer from './footer';
 import NavBarContainer from './navBarContainer';
 import Locacion from '../pages/location';
