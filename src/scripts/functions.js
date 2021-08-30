@@ -7,21 +7,21 @@ export function divisiones() {
   let asignsContainer = document.getElementById("asignsContainer");
 
   // -----------SECTIONS-------------
-  let VOLVER = document.querySelector(".plataformasButton");
+  let VOLVER = document.querySelector(".volverButton");
   //VARIABLES
   // ----------------GO-BACK-BUTTON--------------
 
   VOLVER.addEventListener("click", function goBack() {
-    if (VOLVER.className === "plataformasButton") {
+    if (VOLVER.className === "volverButton") {
       // alert("Elpepe")
       /* history.go(-1) */
     }
-    if (VOLVER.className === "plataformasButton inDivisions") {
+    if (VOLVER.className === "volverButton inDivisions") {
       divisions.style.display = "none";
       cursos.style.display = "flex";
       VOLVER.classList.remove("inDivisions");
     }
-    if (VOLVER.className === "plataformasButton inDivisions inAsign") {
+    if (VOLVER.className === "volverButton inDivisions inAsign") {
       asignsContainer.style.display = "none";
       divisions.style.display = "flex";
       VOLVER.classList.remove("inAsign");
@@ -44,7 +44,7 @@ export function showContentDivisions(numberDivision) {
   const division4 = document.getElementById("division4");
   const division5 = document.getElementById("division5");
   const division6 = document.getElementById("division6");
-  let VOLVER = document.querySelector(".plataformasButton");
+  let VOLVER = document.querySelector(".volverButton");
 
   // ---------DIVISIONS----------
 
@@ -67,6 +67,7 @@ export function showContentDivisions(numberDivision) {
   divisions.style.display = "flex";
   cursos.style.display = "none";
   VOLVER.classList.add("inDivisions");
+  VOLVER.onclick=""
 }
 
 export function showContentAsign(numberAsign) {
@@ -99,7 +100,7 @@ export function showContentAsign(numberAsign) {
   const asign41 = document.getElementById("asign41");
   const asign42 = document.getElementById("asign42");
 
-  let VOLVER = document.querySelector(".plataformasButton");
+  let VOLVER = document.querySelector(".volverButton");
 
   // ----------------ASIGNS----------------------
 

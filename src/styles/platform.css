@@ -9,7 +9,6 @@
   );
 }
 .menuPlatform {
-  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
@@ -17,7 +16,7 @@
   display: block;
   z-index: 3;
 }
-.plataformasButton2 {
+.volverButton {
     background-color: #3297cb;
   display: flex;
   justify-content: space-between;
@@ -41,7 +40,7 @@
   top: 10px;
   position: absolute;
 }
-.plataformasButton2:hover {
+.volverButton:hover {
   width: 11em;
 }
 #haciaDivisiones,
@@ -151,7 +150,7 @@
   font-size: 2.2em;
 }
 @media screen and (max-width: 1024px) {
-  .plataformasButton2 a {
+  .volverButton a {
     display: block;
   }
   .curseContainer {
@@ -160,7 +159,7 @@
   }
 }
 @media screen and (max-width: 895px) {
-  .plataformasButton2 {
+  .volverButton {
     width: 8em;
     height: 4em;
     padding: 0;

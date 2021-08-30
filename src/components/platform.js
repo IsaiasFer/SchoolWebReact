@@ -1,15 +1,47 @@
 import React from "react";
-import { divisiones, showContentAsign} from "../scripts/functions";
+import { /* divisiones, */ showContentAsign } from "../scripts/functions";
 import Curso from "./curso";
 
 class Plataforma extends React.Component {
-  componentDidMount(){
-    divisiones()
-}
+  componentDidMount(props) {
+    var cerrar = this.props.onClose
+    function divisiones(props) {
+      //VARIABLES
+      const MENU = document.querySelector(".menu");
+      // -----------SECTIONS-------------
+      let cursos = document.getElementById("curses");
+      let divisions = document.getElementById("divisions");
+      let asignsContainer = document.getElementById("asignsContainer");
+
+      // -----------SECTIONS-------------
+      let VOLVER = document.querySelector(".volverButton");
+      //VARIABLES
+      // ----------------GO-BACK-BUTTON--------------
+
+      VOLVER.addEventListener("click", function goBack() {
+        if (VOLVER.className === "volverButton") {
+          MENU.classList.remove('isActive')
+          VOLVER.onClick=cerrar()
+        }
+        if (VOLVER.className === "volverButton inDivisions") {
+          divisions.style.display = "none";
+          cursos.style.display = "flex";
+          VOLVER.classList.remove("inDivisions");
+        }
+        if (VOLVER.className === "volverButton inDivisions inAsign") {
+          asignsContainer.style.display = "none";
+          divisions.style.display = "flex";
+          VOLVER.classList.remove("inAsign");
+        }
+      });
+      // ----------------GO-BACK-BUTTON--------------
+    }
+    divisiones();
+  }
   render(props) {
     return (
       <section className="menuPlatform">
-        <button className="plataformasButton2" onClick={this.props.onClose}>
+        <button className="volverButton" /* onClick={this.props.onClose} */>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="31.5"

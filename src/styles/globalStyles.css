@@ -131,7 +131,7 @@ figure {
   width: 100%;
   background-color: #16162d;
 }
-.plataformasButton {
+.plataformasButton{
   background-color: #3297cb;
   display: flex;
   justify-content: space-between;
@@ -156,7 +156,7 @@ figure {
   width: 17em;
   height:4em;
 }
-.plataformasButton span ,.plataformasButton2 span{
+.plataformasButton span ,.volverButton span{
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 30px;
   font-weight: bold;
