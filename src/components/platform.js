@@ -1,10 +1,10 @@
 import React from "react";
-import { /* divisiones, */ showContentAsign } from "../scripts/functions";
 import Curso from "./curso";
+import Division from "./division";
 
 class Plataforma extends React.Component {
   componentDidMount(props) {
-    var cerrar = this.props.onClose
+    var cerrar = this.props.onClose;
     function divisiones(props) {
       //VARIABLES
       const MENU = document.querySelector(".menu");
@@ -20,8 +20,8 @@ class Plataforma extends React.Component {
 
       VOLVER.addEventListener("click", function goBack() {
         if (VOLVER.className === "volverButton") {
-          MENU.classList.remove('isActive')
-          VOLVER.onClick=cerrar()
+          MENU.classList.remove("isActive");
+          VOLVER.onClick = cerrar();
         }
         if (VOLVER.className === "volverButton inDivisions") {
           divisions.style.display = "none";
@@ -71,280 +71,38 @@ class Plataforma extends React.Component {
         </div>
         <section className="divisions" id="divisions">
           <div id="division1">
-            <div
-              onClick={() => {
-                showContentAsign(1);
-              }}
-            >
-              <figure className="curseContainer">
-                <img src="https://i.imgur.com/45ysIEL.png" alt="" />
-              </figure>
-              <h3>
-                1<sup>ro</sup> 1<sup>ra</sup> ciclo basico
-              </h3>
-            </div>
-            <div
-              onClick={() => {
-                showContentAsign(2);
-              }}
-            >
-              <figure className="curseContainer">
-                <img src="https://i.imgur.com/45ysIEL.png" alt="" />
-              </figure>
-              <h3>
-                1<sup>ro</sup> 2 <sup>da</sup> ciclo basico
-              </h3>
-            </div>
-            <div
-              onClick={() => {
-                showContentAsign(3);
-              }}
-            >
-              <figure className="curseContainer">
-                <img src="https://i.imgur.com/45ysIEL.png" alt="" />
-              </figure>
-              <h3>
-                1<sup>ro</sup> 3 <sup>ra</sup> ciclo basico
-              </h3>
-            </div>
-            <div
-              onClick={() => {
-                showContentAsign(4);
-              }}
-            >
-              <figure className="curseContainer">
-                <img src="https://i.imgur.com/45ysIEL.png" alt="" />
-              </figure>
-              <h3>
-                1<sup>ro</sup> 4 <sup>ta</sup> ciclo basico
-              </h3>
-            </div>
-            <div
-              onClick={() => {
-                showContentAsign(5);
-              }}
-            >
-              <figure className="curseContainer">
-                <img src="https://i.imgur.com/45ysIEL.png" alt="" />
-              </figure>
-              <h3>
-                1<sup>ro</sup> 5 <sup>ta</sup> ciclo basico
-              </h3>
-            </div>
+            <Division id={1} año={1} division={1} ciclo="b" />
+            <Division id={2} año={1} division={2} ciclo="b" />
+            <Division id={3} año={1} division={3} ciclo="b" />
+            <Division id={4} año={1} division={4} ciclo="b" />
+            <Division id={5} año={1} division={5} ciclo="b" />
           </div>
           <div id="division2">
-            <div
-              onClick={() => {
-                showContentAsign(6);
-              }}
-            >
-              <figure className="curseContainer">
-                <img src="https://i.imgur.com/klOmYMF.png" alt="" />
-              </figure>
-              <h3>
-                2<sup>do</sup> 1 <sup>ra</sup> ciclo basico
-              </h3>
-            </div>
-            <div
-              onClick={() => {
-                showContentAsign(7);
-              }}
-            >
-              <figure className="curseContainer">
-                <img src="https://i.imgur.com/klOmYMF.png" alt="" />
-              </figure>
-              <h3>
-                2<sup>do</sup> 2 <sup>da</sup> ciclo basico
-              </h3>
-            </div>
-            <div
-              onClick={() => {
-                showContentAsign(8);
-              }}
-            >
-              <figure className="curseContainer">
-                <img src="https://i.imgur.com/klOmYMF.png" alt="" />
-              </figure>
-              <h3>
-                2<sup>do</sup> 3 <sup>ra</sup> ciclo basico
-              </h3>
-            </div>
-            <div
-              onClick={() => {
-                showContentAsign(9);
-              }}
-            >
-              <figure className="curseContainer">
-                <img src="https://i.imgur.com/klOmYMF.png" alt="" />
-              </figure>
-              <h3>
-                2<sup>do</sup> 4 <sup>ta</sup> ciclo basico
-              </h3>
-            </div>
+            <Division id={6} año={2} division={1} ciclo="b" />
+            <Division id={7} año={2} division={2} ciclo="b" />
+            <Division id={8} año={2} division={3} ciclo="b" />
+            <Division id={9} año={2} division={4} ciclo="b" />
           </div>
           <div id="division3">
-            <div
-              onClick={() => {
-                showContentAsign(10);
-              }}
-            >
-              <figure className="curseContainer">
-                <img src="https://i.imgur.com/dJHRV95.png" alt="" />
-              </figure>
-              <h3>
-                1<sup>ro</sup> 1 <sup>ra</sup> ciclo superior
-              </h3>
-            </div>
-            <div
-              onClick={() => {
-                showContentAsign(11);
-              }}
-            >
-              <figure className="curseContainer">
-                <img src="https://i.imgur.com/dJHRV95.png" alt="" />
-              </figure>
-              <h3>
-                1<sup>ro</sup> 2 <sup>da</sup> ciclo superior
-              </h3>
-            </div>
-            <div
-              onClick={() => {
-                showContentAsign(12);
-              }}
-            >
-              <figure className="curseContainer">
-                <img src="https://i.imgur.com/dJHRV95.png" alt="" />
-              </figure>
-              <h3>
-                1<sup>ro</sup> 3 <sup>ra</sup> ciclo superior
-              </h3>
-            </div>
-            <div
-              onClick={() => {
-                showContentAsign(13);
-              }}
-            >
-              <figure className="curseContainer">
-                <img src="https://i.imgur.com/dJHRV95.png" alt="" />
-              </figure>
-              <h3>
-                1<sup>ro</sup> 4 <sup>ta</sup> ciclo superior
-              </h3>
-            </div>
+            <Division id={10} año={1} division={1} ciclo="s" />
+            <Division id={11} año={1} division={2} ciclo="s" />
+            <Division id={12} año={1} division={3} ciclo="s" />
+            <Division id={13} año={1} division={4} ciclo="s" />
           </div>
           <div id="division4">
-            <div
-              onClick={() => {
-                showContentAsign(14);
-              }}
-            >
-              <figure className="curseContainer">
-                <img src="https://i.imgur.com/OKDZFLC.png" alt="" />
-              </figure>
-              <h3>
-                2<sup>do</sup> 1 <sup>ra</sup> ciclo superior
-              </h3>
-            </div>
-            <div
-              onClick={() => {
-                showContentAsign(15);
-              }}
-            >
-              <figure className="curseContainer">
-                <img src="https://i.imgur.com/OKDZFLC.png" alt="" />
-              </figure>
-              <h3>
-                2<sup>do</sup> 2 <sup>da</sup> ciclo superior
-              </h3>
-            </div>
-            <div
-              onClick={() => {
-                showContentAsign(16);
-              }}
-            >
-              <figure className="curseContainer">
-                <img src="https://i.imgur.com/OKDZFLC.png" alt="" />
-              </figure>
-              <h3>
-                2<sup>do</sup> 3 <sup>ra</sup> ciclo superior
-              </h3>
-            </div>
-            <div
-              onClick={() => {
-                showContentAsign(17);
-              }}
-            >
-              <figure className="curseContainer">
-                <img src="https://i.imgur.com/OKDZFLC.png" alt="" />
-              </figure>
-              <h3>
-                2<sup>do</sup> 4 <sup>ta</sup> ciclo superior
-              </h3>
-            </div>
+            <Division id={14} año={2} division={1} ciclo="s" />
+            <Division id={15} año={2} division={2} ciclo="s" />
+            <Division id={16} año={2} division={3} ciclo="s" />
+            <Division id={17} año={2} division={4} ciclo="s" />
           </div>
           <div id="division5">
-            <div
-              onClick={() => {
-                showContentAsign(18);
-              }}
-            >
-              <figure className="curseContainer">
-                <img src="https://i.imgur.com/IEdUyGC.png" alt="" />
-              </figure>
-              <h3>
-                3<sup>ro</sup> 1 <sup>ra</sup> ciclo superior
-              </h3>
-            </div>
-            <div
-              onClick={() => {
-                showContentAsign(19);
-              }}
-            >
-              <figure className="curseContainer">
-                <img src="https://i.imgur.com/IEdUyGC.png" alt="" />
-              </figure>
-              <h3>
-                3<sup>ro</sup> 2 <sup>da</sup> ciclo superior
-              </h3>
-            </div>
-            <div
-              onClick={() => {
-                showContentAsign(20);
-              }}
-            >
-              <figure className="curseContainer">
-                <img src="https://i.imgur.com/IEdUyGC.png" alt="" />
-              </figure>
-              <h3>
-                3<sup>ro</sup> 3 <sup>ra</sup> ciclo superior
-              </h3>
-            </div>
+            <Division id={18} año={3} division={1} ciclo="s" />
+            <Division id={19} año={3} division={2} ciclo="s" />
+            <Division id={20} año={3} division={3} ciclo="s" />
           </div>
           <div id="division6">
-            <div
-              onClick={() => {
-                showContentAsign(21);
-              }}
-            >
-              <figure className="curseContainer">
-                <img src="https://i.imgur.com/beupHtd.png" alt="" />
-              </figure>
-              <h3>
-                4<sup>ro</sup> 1 <sup>ra</sup> ciclo superior
-              </h3>
-            </div>
-            <div
-              onClick={() => {
-                showContentAsign(22);
-              }}
-            >
-              <figure className="curseContainer">
-                <img src="https://i.imgur.com/beupHtd.png" alt="" />
-              </figure>
-              <h3>
-                4<sup>ro</sup> 2 <sup>da</sup> ciclo superior
-              </h3>
-            </div>
+            <Division id={21} año={4} division={1} ciclo="s" />
+            <Division id={22} año={4} division={2} ciclo="s" />
           </div>
         </section>
 
@@ -1093,12 +851,12 @@ class Plataforma extends React.Component {
                 <a href="/">Operaciones unitarias</a>
               </li>
               <li>
-                <a href="https://classNameroom.google.com/c/MjkyMDQyNjcyMDA5?cjc=f22wvg3">
+                <a href="https://classroom.google.com/c/MjkyMDQyNjcyMDA5?cjc=f22wvg3">
                   Fundamentos de los procesos químicos
                 </a>
               </li>
               <li>
-                <a href="/">Química industrial</a>
+                <a href="https://classroom.google.com/c/Mjk1ODcxNjIxOTAx?cjc=z3z46a7">Química industrial</a>
               </li>
               <li>
                 <a href="/">Practicas profesionalizantes I</a>
