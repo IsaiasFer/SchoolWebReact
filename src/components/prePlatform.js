@@ -20,8 +20,10 @@ class PrePlatform extends React.Component {
           <span>ELige tu plataforma de estudio!</span>
           <ul className="platforms">
             <li>
-              <button href="http://eet3141.ddns.net:8080/chamilo/">
-                <img src="https://i.imgur.com/CqsFbpD.png" alt="" />
+              <button>
+                <a href="http://eet3141.ddns.net:8080/chamilo/">
+                  <img src="https://i.imgur.com/CqsFbpD.png" alt="" />
+                </a>
               </button>
             </li>
             <li>
@@ -40,7 +42,9 @@ class PrePlatform extends React.Component {
             </li>
             <li>
               <button href="http://eet3141.ddns.net:8080/moodle/">
-                <img src="https://i.imgur.com/L0n8z2f.png" alt="" />
+                <a href="http://eet3141.ddns.net:8080/chamilo/">
+                  <img src="https://i.imgur.com/L0n8z2f.png" alt="" />
+                </a>
               </button>
             </li>
           </ul>

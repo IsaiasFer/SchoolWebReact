@@ -13,7 +13,6 @@ class Autorities extends React.Component {
           <Autority imageURL='https://i.imgur.com/IvHuKAF.jpg' name='Prof. Martin cardozo' position='Vicedirector TT'/>
           <Autority name='Prof. Silivina Calisaya' position='Secretaria'/>
           <Autority name='Klgo. Matias Morales' position='Prosecretario'/>
-          <Autority name='Prof. Valentin Trejo' position='Jefe de talleres'/>
           <Autority imageURL='https://i.imgur.com/UUhnxCfl.jpg' name='Prof. Viviana Farfan' position='MEP TM'/>
           <Autority name='Sandra Ramirez' position='MEP TT'/>
         </section>
