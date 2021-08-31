@@ -2,7 +2,7 @@ import React from "react";
 
 import Autorities from '../components/autorities'
 
-import "../styles/institucionalStyles.css";
+import "../styles/institucionalStyles.scss";
 
 
 class Institucional extends React.Component {

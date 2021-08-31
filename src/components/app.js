@@ -10,6 +10,7 @@ import NavBarContainer from './navBarContainer';
 
 import '../styles/platform.css'
 import { burguerButton, menuLateral } from '../scripts/functions';
+import NotFound from './notFound';
 
 
 class App extends React.Component {
@@ -28,6 +29,7 @@ class App extends React.Component {
                     <Route exact path='/fotos' component={Fotos} />
                     <Route exact path='/institucional' component={Institucional} />
                     <Route exact path='/plataformas' component={PrePlatform} />
+                    <Route component={NotFound} />
                 </Switch>
                 <Footer />
             </BrowserRouter>
