@@ -70,15 +70,15 @@ class News extends React.Component {
             <Article
               ref={news}
               NroDeTitulo="titleNew titleNew1"
-              Redireccion="news/comunicado.html"
-              Titulo="COMUNICADO A LA COMUNIDAD EDUCATIVA"
-              ImageURL="https://imgur.com/Ns9vKHl.png"
-              SubtituloInterno="COMUNICADO"
-              Descripcion="COMUNICADO A LA COMUNIDAD EDUCATIVA DE E.E.T. N° 3141"
+              Redireccion="/formulario"
+              Titulo="Encuesta acerca de pagina web"
+              ImageURL="https://economipedia.com/wp-content/uploads/encuesta.jpg"
+              SubtituloInterno="FORMULARIO"
+              Descripcion="Encuesta de satisfaccion de pagina web"
             />
             <Article
               NroDeTitulo="titleNew titleNew2"
-              Redireccion="news/comisiones de alumnos.html"
+              Redireccion="/comisiones"
               Titulo="COMISIONES DE ALUMNOS"
               ImageURL="https://imgur.com/o6zYOH2.png"
               SubtituloInterno="Comisiones de alumnos"
@@ -86,7 +86,7 @@ class News extends React.Component {
             />
             <Article
               NroDeTitulo="titleNew titleNew3"
-              Redireccion="news/sorteo de turnos.html"
+              Redireccion="/sorteo"
               Titulo="COMUNICADO DE SORTEO DE TURNOS"
               ImageURL="https://imgur.com/pNoqTrb.png"
               SubtituloInterno="Comunicado"
@@ -96,7 +96,7 @@ class News extends React.Component {
 
             <Article
               NroDeTitulo="titleNew titleNew4"
-              Redireccion="news/normas de bioseguridad.html"
+              Redireccion="/bioseguridad"
               Titulo="NORMAS DE BIOSEGURIDAD"
               ImageURL="https://imgur.com/l77rKor.png"
               SubtituloInterno="COMUNICADO A LA COMUNIDAD EDUCATIVA SOBRE LAS NORMAS A LLEVAR A CABO EN EL ESTABLECIMIENTO"
@@ -104,7 +104,7 @@ class News extends React.Component {
             />
             <Article
               NroDeTitulo="titleNew titleNew5"
-              Redireccion="news/dictamen de disposicion interna.html"
+              Redireccion="dictamen"
               Titulo="DICTAMEN DISPOSICION INTERNA"
               ImageURL="https://imgur.com/f2WfyqR.png"
               SubtituloInterno="INTEGRANTES DE LA DISPOSICION INTERNA"
@@ -113,7 +113,7 @@ class News extends React.Component {
 
             <Article
               NroDeTitulo="titleNew titleNew6"
-              Redireccion="news/te esperamos en la tecnica.html"
+              Redireccion="/teesperamos"
               Titulo="TE ESPERAMOS EN LA TECNICA Nº3141"
               ImageURL="https://i.imgur.com/wTcOQQJ.png"
               SubtituloInterno="VIDEO DE BIENVENIDA"

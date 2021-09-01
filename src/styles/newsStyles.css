@@ -1,7 +1,7 @@
-.navContainer{
+/* .navContainer{
     position: sticky;
     top: -1px;
-}
+} */
 .newContainer{
     background: linear-gradient(135deg, rgba(50,151,203,1) 0%, rgba(49,49,100,1) 100%);
     padding: 1em 6.5em 1em 6.5em;

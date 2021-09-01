@@ -13,6 +13,12 @@ import Locacion from '../pages/location';
 import '../styles/platform.css';
 import { burguerButton, menuLateral } from '../scripts/functions';
 import NotFound from './notFound';
+import Formulario from './news/Formulario';
+import Comisiones from './news/comisiones';
+import SorteoTurnos from './news/sorteoTurnos';
+import Bioseguridad from './news/bioseguridad';
+import TeEsperamos from './news/teEsperamos';
+import Dictamen from './news/dictamenInterno';
 
 class App extends React.Component {
   componentDidMount() {
@@ -32,6 +38,13 @@ class App extends React.Component {
           <Route exact path="/plataformas" component={PrePlatform} />
           <Route exact path="/ubicacion" component={Locacion} />
           <Route exact path="/academico" component={Academico} />
+          <Route exact path="/formulario" component={Formulario} />
+          <Route exact path="/comisiones" component={Comisiones} />
+          <Route exact path="/sorteo" component={SorteoTurnos} />
+          <Route exact path="/bioseguridad" component={Bioseguridad} />
+          <Route exact path="/dictamen" component={Dictamen} />
+          <Route exact path="/teesperamos" component={TeEsperamos} />
+
           <Route component={NotFound} />
         </Switch>
         <Footer />

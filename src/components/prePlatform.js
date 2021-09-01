@@ -17,7 +17,7 @@ class PrePlatform extends React.Component {
     return (
       <div className="menu">
         <nav>
-          <span>ELige tu plataforma de estudio!</span>
+          <span>Elige tu plataforma de estudio!</span>
           <ul className="platforms">
             <li>
               <button>

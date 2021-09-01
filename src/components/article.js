@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class Article extends React.Component {
   render() {
     return (
       <article className="new">
         <div className={this.props.NroDeTitulo}>
-          <a className="linkNews" href={this.props.Redireccion}>
+          <Link className="linkNews" to={this.props.Redireccion}>
             <h1>{this.props.Titulo}</h1>
-          </a>
+          </Link>
         </div>
 
         <figure className="newImageContainer">
