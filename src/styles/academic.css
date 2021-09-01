@@ -212,7 +212,6 @@ button:hover {
 button:active {
   background: #16162d;
 }
-
 /* .column1Container a {
   display: flex;
   outline: none;
@@ -221,7 +220,6 @@ button:active {
   align-items: center;
   justify-content: center;
 } */
-
 .academic a:hover {
   background: #3297cb;
 }
