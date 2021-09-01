@@ -2,48 +2,53 @@
   border: RED 1px solid;
 } */
 /* FUENTES */
-img{
-  background:linear-gradient(135deg, rgba(50,151,203,1) 0%, rgba(49,49,100,1) 100%);
+img {
+  background: linear-gradient(
+    135deg,
+    rgba(50, 151, 203, 1) 0%,
+    rgba(49, 49, 100, 1) 100%
+  );
 }
 @font-face {
-	font-family: 'icomoon';
-	src:  url('../fonts/icomoon.eot?6ppo9d');
-	src:  url('../fonts/icomoon.eot?6ppo9d#iefix') format('embedded-opentype'),
-	  url('../fonts/icomoon.ttf?6ppo9d') format('truetype'),
-	  url('../fonts/icomoon.woff?6ppo9d') format('woff'),
-	  url('../fonts/icomoon.svg?6ppo9d#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-	font-display: block;
-  }
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?6ppo9d');
+  src: url('../fonts/icomoon.eot?6ppo9d#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?6ppo9d') format('truetype'),
+    url('../fonts/icomoon.woff?6ppo9d') format('woff'),
+    url('../fonts/icomoon.svg?6ppo9d#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
-  [class^="icon-"], [class*=" icon-"] {
-	/* use !important to prevent issues with browser extensions that change fonts */
-	font-family: 'icomoon' !important;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-  }
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-  .icon-menu1:before {
-	content: "\e900";
-  }
-  .icon-menu:before {
-	content: "\e9bd";
-  }
-
+.icon-menu1:before {
+  content: '\e900';
+}
+.icon-menu:before {
+  content: '\e9bd';
+}
 
 /* FUENTES */
 body {
   font-family: 'Barlow Condensed', sans-serif;
   margin: 0;
   color: white;
+  scroll-behavior: smooth;
 }
 /* ----START-HEADER----- */
 header {
@@ -63,14 +68,14 @@ header h1 {
   margin: 0;
   margin-left: 6.5em;
 }
-.logotypeContainer img{
+.logotypeContainer img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   background: unset;
 }
 /* ----END-HEADER----- */
-.delete{
+.delete {
   display: none;
 }
 
@@ -109,29 +114,29 @@ figure {
   font-size: 30px;
   padding: 0;
 }
-.list ul li{
+.list ul li {
   font-size: 30px;
-  transition: .15s;
+  transition: 0.15s;
 }
-.list ul li:active{
-  font-size:20px;
+.list ul li:active {
+  font-size: 20px;
 }
 .list ul li a {
   text-shadow: 2px 2px 6px #000000;
   text-decoration: none;
   color: white;
   font-size: 1em;
-  transition: .3s;
+  transition: 0.3s;
 }
-.list ul li a:hover{
-  font-size:1.1em
+.list ul li a:hover {
+  font-size: 1.1em;
 }
 .navContainer {
   height: 3.4em;
   width: 100%;
   background-color: #16162d;
 }
-.plataformasButton{
+.plataformasButton {
   background-color: #3297cb;
   display: flex;
   justify-content: space-between;
@@ -144,19 +149,20 @@ figure {
   z-index: 2;
   width: 17em;
   height: 4em;
-  cursor:pointer;
+  cursor: pointer;
   outline: none;
-  transition:.3s;
+  transition: 0.3s;
 }
-.plataformasButton:hover{
+.plataformasButton:hover {
   width: 18em;
   height: 5em;
 }
-.plataformasButton:active{
+.plataformasButton:active {
   width: 17em;
-  height:4em;
+  height: 4em;
 }
-.plataformasButton span ,.volverButton span{
+.plataformasButton span,
+.volverButton span {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 30px;
   font-weight: bold;
@@ -174,7 +180,6 @@ figure {
 
 /* ----END-HERO----- */
 
-
 /* --------------START-FOOTER---------------- */
 /* -------------START-FOOTER-CSS-GRID--------------- */
 footer {
@@ -182,8 +187,8 @@ footer {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 90% 10%;
   grid-template-areas:
-    "contactSchool contactFafe"
-    "copyright copyright";
+    'contactSchool contactFafe'
+    'copyright copyright';
   /* width: 100vw; */
   /* height: 300px; */
   height: auto;
@@ -211,12 +216,12 @@ footer {
 /* ---END-FOOTER-CSS-GRID--- */
 
 /* -----START-SECTION-CONTACT-SCHOOL----- */
-.contactSchool div{
-  margin:10px 0;
+.contactSchool div {
+  margin: 10px 0;
   align-items: center;
 }
-.contactSchool div p{
-  margin:0;
+.contactSchool div p {
+  margin: 0;
 }
 .titleContactSchool {
   display: inherit;
@@ -245,14 +250,13 @@ footer {
 }
 /* -----END-SECTION-CONTACT-SCHOOL----- */
 
-
 .contactFafe {
   display: grid;
   grid-template-rows: 60% 40%;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "logotypeFafe"
-    "socialNetworks";
+    'logotypeFafe'
+    'socialNetworks';
   justify-items: center;
 }
 .logotypeFafe {
@@ -263,7 +267,7 @@ footer {
   padding-top: 8%;
 }
 #FAFE {
-  font-family: Rockwell,sans-serif;
+  font-family: Rockwell, sans-serif;
   font-size: 2.4em;
   font-weight: bold;
   margin: 0;
@@ -278,7 +282,7 @@ footer {
   font-size: 1em;
 }
 .buttonContactFafe a button:hover {
-  background: #3297CB;
+  background: #3297cb;
   /* background-color: ; */
 }
 .socialNetworks {
@@ -287,8 +291,7 @@ footer {
   width: 100%;
   justify-content: center;
 }
-.socialNetworks a{
-
+.socialNetworks a {
   margin: auto 3%;
 }
 .copyright {
@@ -303,8 +306,8 @@ svg {
 /* -------------END-FOOTER--------------- */
 
 /* START-PLATFORMS */
-.menu{
-  display:none;
+.menu {
+  display: none;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -314,202 +317,201 @@ svg {
     rgba(49, 49, 100, 1) 100%
   );
   z-index: 1;
-  transition: .3s;
+  transition: 0.3s;
 }
-.menu.isActive{
+.menu.isActive {
   display: block;
-  transition: .3s;
+  transition: 0.3s;
 }
-.menu nav{
+.menu nav {
   display: flex;
   height: inherit;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.platforms{
+.platforms {
   display: flex;
   width: 40%;
   justify-content: space-around;
-  padding:0;
+  padding: 0;
 }
-.platforms li{
+.platforms li {
   list-style: none;
 }
-.platforms li button{
+.platforms li button {
   background: unset;
-  border:none
+  border: none;
 }
-.platforms li button img{
+.platforms li button img {
   height: 7em;
   width: 13em;
   object-fit: contain;
-  background: rgba(255, 255, 255, .4);
+  background: rgba(255, 255, 255, 0.4);
   border-radius: 15px;
-  transition: .3s;
+  transition: 0.3s;
 }
-.platforms li button img:hover{
+.platforms li button img:hover {
   height: 9em;
   width: 14em;
 }
-.menu nav span{
+.menu nav span {
   font-size: 2em;
   text-align: center;
 }
 /* END-PLATFORMS */
 /* burguer-buttoN-START */
-.burguer-button{
-	text-align: center;
-	line-height:40px;
-	display:none;
-	width:40px;
-	height:40px;
-	border-radius: 50%;
-	background:rgba(55,58,64,.5);
-	position:fixed;
-	z-index:4;
-	left:7px;
-	top:7px;
-	color:#eeeeee;
+.burguer-button {
+  text-align: center;
+  line-height: 40px;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(55, 58, 64, 0.5);
+  position: fixed;
+  z-index: 4;
+  left: 7px;
+  top: 7px;
+  color: #eeeeee;
 }
 
 /* burguer-button-END*/
 /* START-RESPONSIVE */
-@media screen and (max-width:1110px){
+@media screen and (max-width: 1110px) {
   .logotypeContainer {
     width: 6em;
     height: 6em;
   }
-  .hero h1{
-    font-size:60px;
+  .hero h1 {
+    font-size: 60px;
     margin-left: 1em;
   }
-  .logotypeContainer{
+  .logotypeContainer {
     margin-left: 3.5em;
   }
-  .list{
-    margin-left:4em;
+  .list {
+    margin-left: 4em;
     width: 90%;
   }
-  .list ul{
+  .list ul {
     width: 65%;
   }
-  .platforms{
-    width:55%
+  .platforms {
+    width: 55%;
   }
 }
-@media screen and (max-width:1024px){
-  .contactSchool{
+@media screen and (max-width: 1024px) {
+  .contactSchool {
     padding: 0% 9%;
   }
 }
-@media screen and (max-width:970px){
-  .list ul{
+@media screen and (max-width: 970px) {
+  .list ul {
     width: 87%;
   }
-  header h1{
-    font-size:2.8em;
+  header h1 {
+    font-size: 2.8em;
   }
 }
-@media screen and (max-width:890px){
-  .plataformasButton span{
+@media screen and (max-width: 890px) {
+  .plataformasButton span {
     display: none;
   }
-  .plataformasButton{
+  .plataformasButton {
     width: 4em;
     height: 4em;
   }
-  .plataformasButton:hover{
+  .plataformasButton:hover {
     width: 5em;
     height: 5em;
   }
-  .plataformasButton:active{
+  .plataformasButton:active {
     width: 4em;
     height: 4em;
   }
-  .list{
+  .list {
     width: 85%;
   }
-  .list ul{
+  .list ul {
     width: 87%;
   }
-  .platforms{
-    width:70%
+  .platforms {
+    width: 70%;
   }
 }
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px) {
   .logotypeContainer {
     width: 5em;
     height: 5em;
   }
-  .contactSchool{
+  .contactSchool {
     padding: 0 0 0 5%;
   }
 }
-@media screen and (max-width:767px){
-.plataformasButton:active{
-  width: 3em;
-  height: 3em;
-}
-.plataformasButton:hover {
-  width: 4em;
-  height: 4em;
-}
-  .list{
+@media screen and (max-width: 767px) {
+  .plataformasButton:active {
+    width: 3em;
+    height: 3em;
+  }
+  .plataformasButton:hover {
+    width: 4em;
+    height: 4em;
+  }
+  .list {
     justify-content: flex-end;
     margin-left: 0;
-    width:100%;
+    width: 100%;
   }
-  .burguer-button{
+  .burguer-button {
     display: block;
   }
-  .list-ul{
-		position:fixed;
-		background:rgba(29,37,44,.8);
-		z-index: 3;
-		top:0;
-		left:-100vw;
-		width:100vw;
-		bottom:0;
-		display:flex;
-		align-items: center;
-		justify-content: center;
-		transition:.3s;
+  .list-ul {
+    position: fixed;
+    background: rgba(29, 37, 44, 0.8);
+    z-index: 3;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
     flex-direction: column;
-
-	}
-	.list-ul.isActive{
-		left:0;
-	}
-  .list ul{
-    width: 100%;
-    padding:25vh 0;
   }
-  .navContainer{
+  .list-ul.isActive {
+    left: 0;
+  }
+  .list ul {
+    width: 100%;
+    padding: 25vh 0;
+  }
+  .navContainer {
     height: 0;
     width: 0;
   }
-  .plataformasButton{
+  .plataformasButton {
     position: absolute;
     top: 10px;
     right: 10px;
   }
   .titleContactSchool h2 {
-    font-size:1em;
+    font-size: 1em;
     color: #fff;
-}
-.platforms{
-  flex-direction: column;
-  align-items: center;
-  height: 60%;
-}
-header h1{
-    font-size:1.8em;
+  }
+  .platforms {
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+  }
+  header h1 {
+    font-size: 1.8em;
   }
 }
 
-@media screen and (max-width:590px){
-  .plataformasButton{
+@media screen and (max-width: 590px) {
+  .plataformasButton {
     top: 0px;
     padding: 0;
     justify-content: center;
@@ -517,63 +519,61 @@ header h1{
     height: 3em;
     right: 0;
   }
-  .plataformasButton:hover{
+  .plataformasButton:hover {
     width: 3.1em;
     height: 3.1em;
   }
-  .plataformasButton:active{
+  .plataformasButton:active {
     width: 2.8em;
     height: 2.8em;
   }
 }
-@media screen and (max-width:455px){
+@media screen and (max-width: 455px) {
   .hero h1 {
-  font-size: 45px;
-  margin-left: .5em;
-  margin-top: .6em;
+    font-size: 45px;
+    margin-left: 0.5em;
+    margin-top: 0.6em;
+  }
 }
-
-}
-@media screen and (max-width:425px){
+@media screen and (max-width: 425px) {
   .socialNetworks {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 50% 50%;
     width: 100%;
     justify-items: center;
     align-content: center;
   }
-  
-  .socialNetworks a{
+
+  .socialNetworks a {
     margin: 0 3% 0;
   }
   .contactSchool div p {
     margin: 0;
     font-size: 0.9em;
+  }
 }
-
-}
-@media screen and (max-width:375px){
-  header h1{
+@media screen and (max-width: 375px) {
+  header h1 {
     font-size: 1em;
   }
-  .logotypeContainer{
+  .logotypeContainer {
     width: 3em;
     height: 3em;
   }
-  .hero h1{
-    margin-left:.5em;
-    margin-top: .5em;
+  .hero h1 {
+    margin-left: 0.5em;
+    margin-top: 0.5em;
   }
 }
-@media screen and (max-width:360px){
-  header h1{
+@media screen and (max-width: 360px) {
+  header h1 {
     font-size: 0.8em;
   }
 }
-@media screen and (max-width:345px){
-  .hero h1{
-    font-size:40px;
+@media screen and (max-width: 345px) {
+  .hero h1 {
+    font-size: 40px;
   }
 }
 /* END-RESPONSIVE */
