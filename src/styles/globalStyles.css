@@ -131,7 +131,7 @@ figure {
   width: 100%;
   background-color: #16162d;
 }
-.plataformasButton {
+.plataformasButton{
   background-color: #3297cb;
   display: flex;
   justify-content: space-between;
@@ -156,7 +156,7 @@ figure {
   width: 17em;
   height:4em;
 }
-.plataformasButton span {
+.plataformasButton span ,.volverButton span{
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 30px;
   font-weight: bold;
@@ -336,17 +336,21 @@ svg {
 .platforms li{
   list-style: none;
 }
-.platforms li a img{
-  height: 5em;
-  width: 10em;
+.platforms li button{
+  background: unset;
+  border:none
+}
+.platforms li button img{
+  height: 7em;
+  width: 13em;
   object-fit: contain;
   background: rgba(255, 255, 255, .4);
   border-radius: 15px;
   transition: .3s;
 }
-.platforms li a img:hover{
-  height: 6em;
-  width: 11em;
+.platforms li button img:hover{
+  height: 9em;
+  width: 14em;
 }
 .menu nav span{
   font-size: 2em;

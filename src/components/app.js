@@ -5,13 +5,20 @@ import Fotos from '../pages/fotos';
 import Institucional from '../pages/institucional';
 import Header from '../components/header';
 import PrePlatform from './prePlatform';
-/* import NavBar from './navBar'; */
 import Footer from './footer';
 import NavBarContainer from './navBarContainer';
-import Locacion from '../pages/location';
 import Academico from '../pages/academic';
+import Locacion from '../pages/location';
+
+import '../styles/platform.css';
+import { burguerButton, menuLateral } from '../scripts/functions';
+import NotFound from './notFound';
 
 class App extends React.Component {
+  componentDidMount() {
+    burguerButton();
+    menuLateral();
+  }
   render() {
     return (
       <BrowserRouter>
@@ -25,6 +32,7 @@ class App extends React.Component {
           <Route exact path="/plataformas" component={PrePlatform} />
           <Route exact path="/ubicacion" component={Locacion} />
           <Route exact path="/academico" component={Academico} />
+          <Route component={NotFound} />
         </Switch>
         <Footer />
       </BrowserRouter>
