@@ -1,16 +1,9 @@
-import React, { createRef } from 'react';
+import React from 'react';
 
 class Article extends React.Component {
-  constructor(props) {
-    super(props);
-    // this.news = createRef();
-  }
   render() {
-    // this.handleClick = () => {
-    //   console.log(news.current);
-    // };
     return (
-      <article className="new" onClick={this.handleClick}>
+      <article className="new">
         <div className={this.props.NroDeTitulo}>
           <a className="linkNews" href={this.props.Redireccion}>
             <h1>{this.props.Titulo}</h1>

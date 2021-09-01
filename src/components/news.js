@@ -1,5 +1,4 @@
 import React, { createRef } from 'react';
-import { animateScroll as scroll } from 'react-scroll';
 
 import Article from './article';
 
