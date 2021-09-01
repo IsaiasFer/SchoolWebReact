@@ -278,7 +278,7 @@ class Plataforma extends React.Component {
                 <a href="/">Ingles</a>
               </li>
               <li>
-                <a href="/">Educacion fisica</a>
+                <a href="https://classroom.google.com/u/1/c/MzI0MzYzMzEyNTkw">Educacion fisica</a>
               </li>
               <li>
                 <a href="/">Educacion Artistica</a>
