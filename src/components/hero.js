@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 /* import NavBar from './navBar' */
 
 class Hero extends React.Component {
@@ -14,7 +14,6 @@ class Hero extends React.Component {
             <img src="https://i.imgur.com/4x2WmgGh.jpg" alt="" />
           </figure>
         </div>
-        {/* <NavBar/> */}
         <h1>
           BIENVENIDOS A LA ESCUELA DE
           <br />

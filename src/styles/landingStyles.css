@@ -127,7 +127,6 @@
 }
 .layerNew h2 {
   margin-top: 5%;
-  margin-bottom: 35%;
   transition: all 500ms ease-out;
 }
 .newImageContainer:hover > .layerNew {

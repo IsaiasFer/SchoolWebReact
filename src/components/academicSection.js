@@ -1,9 +1,22 @@
 import React, { Component, createRef } from 'react';
-// import { contents } from './functions';
+import Titulo from '../files/BOLETIN OFICIAL SALTA - DECRETO N° 561_11.pdf';
+import PlandeEstudio from '../files/curriculatecnica.pdf';
 
 export default class academicSection extends Component {
   constructor(props) {
     super(props);
+    // --------SECTIONS----------
+    this.academic = createRef();
+    this.column1Container = createRef();
+    this.column2Container = createRef();
+    // --------SECTIONS----------
+    // --------BUTTONS-OPEN----------
+    this.backButtonDivices425px = createRef();
+    this.openTitle = createRef();
+    this.openStudyPlan = createRef();
+    this.openStudyProgram = createRef();
+    this.openTeachersInfo = createRef();
+    // --------BUTTONS-OPEN----------
     // --------BUTTONS-CONTENTS----------
     this.titleContent = createRef();
     this.studyPlanContent = createRef();
@@ -24,6 +37,23 @@ export default class academicSection extends Component {
     // --------BUTTONS-CONTENT-INFO-TEACHERS----------
   }
   render() {
+    this.handleClickContents = (e, numberContent) => {
+      const titleContent = this.titleContent;
+      const studyPlanContent = this.studyPlanContent;
+      const studyProgramContent = this.studyProgramContent;
+      const infoTeachersContent = this.infoTeachersContent;
+      let contents = [
+        titleContent,
+        studyPlanContent,
+        studyProgramContent,
+        infoTeachersContent,
+      ];
+
+      for (let i = 0; i < contents.length; i++) {
+        contents[i].current.style.display = 'none';
+      }
+      contents[numberContent].current.style.display = 'inline-block';
+    };
     this.handleClickTeachers = (e, numberLinks) => {
       const infoTeachersContent1 = this.infoTeachersContent1;
       const infoTeachersContent2 = this.infoTeachersContent2;
@@ -35,7 +65,6 @@ export default class academicSection extends Component {
       }
       infoTeachersContents[numberLinks].current.style.display = 'inline-block';
     };
-
     this.handleClickStudy = (e, numberLinks) => {
       const firstYearContentCB = this.firstYearContentCB;
       const secondYearContentCB = this.secondYearContentCB;
@@ -59,24 +88,66 @@ export default class academicSection extends Component {
       programContent[numberLinks].current.style.display = 'inline-block';
     };
 
-    this.handleClickContents = (e, numberContent) => {
-      const titleContent = this.titleContent;
-      const studyPlanContent = this.studyPlanContent;
+    if (window.screen.width < 426) {
+      const openTitle = this.openTitle;
+      const openStudyPlan = this.openStudyPlan;
+      const openStudyProgram = this.openStudyProgram;
+      const openTeachersInfo = this.openTeachersInfo;
+      const backButton425px = this.backButtonDivices425px;
+      const column2Container = this.column2Container;
+
       const studyProgramContent = this.studyProgramContent;
       const infoTeachersContent = this.infoTeachersContent;
 
-      let contents = [
-        titleContent,
-        studyPlanContent,
-        studyProgramContent,
-        infoTeachersContent,
+      let academicContent425px = [
+        openTitle,
+        openStudyPlan,
+        openStudyProgram,
+        openTeachersInfo,
       ];
+      this.handleClickContents = (e, numberButton) => {
+        const studyProgramContent = this.studyProgramContent;
+        const infoTeachersContent = this.infoTeachersContent;
 
-      for (let i = 0; i < contents.length; i++) {
-        contents[i].current.style.display = 'none';
-      }
-      contents[numberContent].current.style.display = 'inline-block';
-    };
+        if (numberButton === 0) {
+          openTitle.current.href = Titulo;
+          openTitle.current.target = 'blank';
+          openTitle.current.style.textDecoration = 'none';
+        }
+
+        if (numberButton === 1) {
+          openStudyPlan.current.href = PlandeEstudio;
+          openStudyPlan.current.target = 'blank';
+          openStudyPlan.current.style.textDecoration = 'none';
+        }
+
+        if (numberButton === 2) {
+          for (let i = 0; i < academicContent425px.length; i++) {
+            academicContent425px[i].current.style.display = 'none';
+          }
+          column2Container.current.className = 'column1Container';
+          studyProgramContent.current.style.display = 'grid';
+          backButton425px.current.style.display = 'inline-block';
+        }
+        if (numberButton === 3) {
+          for (let i = 0; i < academicContent425px.length; i++) {
+            academicContent425px[i].current.style.display = 'none';
+          }
+          column2Container.current.className = 'column1Container';
+          infoTeachersContent.current.style.display = 'grid';
+          backButton425px.current.style.display = 'inline-block';
+        }
+      };
+      this.comeBack425px = () => {
+        for (let i = 0; i < academicContent425px.length; i++) {
+          academicContent425px[i].current.style.display = 'flex';
+        }
+        studyProgramContent.current.style.display = 'none';
+        infoTeachersContent.current.style.display = 'none';
+        column2Container.current.className = 'column2Container';
+        backButton425px.current.style.display = 'none';
+      };
+    }
 
     return (
       <React.Fragment>
@@ -84,6 +155,8 @@ export default class academicSection extends Component {
           <button
             className="backButtonDivices425px"
             id="backButtonDivices425px"
+            ref={this.backButtonDivices425px}
+            onClick={this.comeBack425px}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -101,13 +174,17 @@ export default class academicSection extends Component {
             </svg>
           </button>
 
-          <div className="column1Container" id="column1Container">
+          <div
+            className="column1Container"
+            id="column1Container"
+            ref={this.column1Container}
+          >
             <div className="buttonsContainer">
               <a
                 id="openTitle"
                 onClick={(e) => this.handleClickContents(e, 0)}
                 className="titleAcademic"
-                // href={none}
+                ref={this.openTitle}
               >
                 Titulo
               </a>
@@ -116,35 +193,42 @@ export default class academicSection extends Component {
                 id="openStudyPlan"
                 onClick={(e) => this.handleClickContents(e, 1)}
                 className="studyPlan"
+                ref={this.openStudyPlan}
               >
                 Plan de estudio
               </a>
 
-              <a
+              <button
                 id="openStudyProgram"
                 onClick={(e) => this.handleClickContents(e, 2)}
                 className="studyProgram"
+                ref={this.openStudyProgram}
               >
                 {' '}
                 Programa de estudio
-              </a>
+              </button>
 
-              <a
+              <button
                 id="openTeachersInfo"
                 onClick={(e) => this.handleClickContents(e, 3)}
                 className="infoTeachers"
+                ref={this.openTeachersInfo}
               >
                 Info profesores
-              </a>
+              </button>
             </div>
           </div>
 
-          <div className="column2Container" id="column2Container">
+          <div
+            className="column2Container"
+            id="column2Container"
+            ref={this.column2Container}
+          >
             <iframe
               className="titleContent"
               id="titleContent"
               ref={this.titleContent}
-              src="https://portaldelasescuelas.org/wp-content/uploads/2015/08/Caperucita-Roja-COMPLETO-ilovepdf-compressed.pdf"
+              src={Titulo}
               title="PDF"
             ></iframe>
 
@@ -152,7 +236,7 @@ export default class academicSection extends Component {
               className="studyPlanContent"
               id="studyPlanContent"
               ref={this.studyPlanContent}
-              src="https://www.cultura.gob.cl/wp-content/uploads/2014/01/un-cuento-al-dia-antologia.pdf"
+              src={PlandeEstudio}
               title="PDF"
             ></iframe>
 

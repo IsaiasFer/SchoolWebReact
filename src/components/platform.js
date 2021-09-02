@@ -1,37 +1,37 @@
-import React from "react";
-import Curso from "./curso";
-import Division from "./division";
+import React from 'react';
+import Curso from './curso';
+import Division from './division';
 
 class Plataforma extends React.Component {
   componentDidMount(props) {
     var cerrar = this.props.onClose;
     function divisiones(props) {
       //VARIABLES
-      const MENU = document.querySelector(".menu");
+      const MENU = document.querySelector('.menu');
       // -----------SECTIONS-------------
-      let cursos = document.getElementById("curses");
-      let divisions = document.getElementById("divisions");
-      let asignsContainer = document.getElementById("asignsContainer");
+      let cursos = document.getElementById('curses');
+      let divisions = document.getElementById('divisions');
+      let asignsContainer = document.getElementById('asignsContainer');
 
       // -----------SECTIONS-------------
-      let VOLVER = document.querySelector(".volverButton");
+      let VOLVER = document.querySelector('.volverButton');
       //VARIABLES
       // ----------------GO-BACK-BUTTON--------------
 
-      VOLVER.addEventListener("click", function goBack() {
-        if (VOLVER.className === "volverButton") {
-          MENU.classList.remove("isActive");
+      VOLVER.addEventListener('click', function goBack() {
+        if (VOLVER.className === 'volverButton') {
+          MENU.classList.remove('isActive');
           VOLVER.onClick = cerrar();
         }
-        if (VOLVER.className === "volverButton inDivisions") {
-          divisions.style.display = "none";
-          cursos.style.display = "flex";
-          VOLVER.classList.remove("inDivisions");
+        if (VOLVER.className === 'volverButton inDivisions') {
+          divisions.style.display = 'none';
+          cursos.style.display = 'flex';
+          VOLVER.classList.remove('inDivisions');
         }
-        if (VOLVER.className === "volverButton inDivisions inAsign") {
-          asignsContainer.style.display = "none";
-          divisions.style.display = "flex";
-          VOLVER.classList.remove("inAsign");
+        if (VOLVER.className === 'volverButton inDivisions inAsign') {
+          asignsContainer.style.display = 'none';
+          divisions.style.display = 'flex';
+          VOLVER.classList.remove('inAsign');
         }
       });
       // ----------------GO-BACK-BUTTON--------------
@@ -278,7 +278,7 @@ class Plataforma extends React.Component {
                 <a href="/">Ingles</a>
               </li>
               <li>
-                <a href="https://classroom.google.com/u/1/c/MzI0MzYzMzEyNTkw">Educacion fisica</a>
+                <a href="/">Educacion fisica</a>
               </li>
               <li>
                 <a href="/">Educacion Artistica</a>
@@ -388,7 +388,7 @@ class Plataforma extends React.Component {
                 <li>
                   <a href="/">Dibujo tecnico II</a>
                 </li>
-              </ul>{" "}
+              </ul>{' '}
             </ul>
           </div>
           <div className="asign" id="asign23b">
@@ -430,7 +430,7 @@ class Plataforma extends React.Component {
                 <li>
                   <a href="/">Dibujo tecnico II</a>
                 </li>
-              </ul>{" "}
+              </ul>{' '}
             </ul>
           </div>
           <div className="asign" id="asign24b">
@@ -472,7 +472,7 @@ class Plataforma extends React.Component {
                 <li>
                   <a href="/">Dibujo tecnico II</a>
                 </li>
-              </ul>{" "}
+              </ul>{' '}
             </ul>
           </div>
           <div className="asign" id="asign11">
@@ -856,7 +856,9 @@ class Plataforma extends React.Component {
                 </a>
               </li>
               <li>
-                <a href="https://classroom.google.com/c/Mjk1ODcxNjIxOTAx?cjc=z3z46a7">Química industrial</a>
+                <a href="https://classroom.google.com/c/Mjk1ODcxNjIxOTAx?cjc=z3z46a7">
+                  Química industrial
+                </a>
               </li>
               <li>
                 <a href="/">Practicas profesionalizantes I</a>

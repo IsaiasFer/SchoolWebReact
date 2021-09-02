@@ -10,7 +10,7 @@ import NavBarContainer from './navBarContainer';
 import Academico from '../pages/academic';
 import Locacion from '../pages/location';
 
-import '../styles/platform.css';
+import '../styles/platform.scss';
 import { burguerButton, menuLateral } from '../scripts/functions';
 import NotFound from './notFound';
 import Formulario from './news/Formulario';

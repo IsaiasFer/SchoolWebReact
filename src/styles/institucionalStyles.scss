@@ -1,7 +1,7 @@
 @import 'variables.scss';
 
 .pageTitle {
-  color: #16162d;
+  color: $azulOscuro;
   font-size: 48px;
   margin-left: 1em;
   margin-top: 0;
@@ -18,7 +18,7 @@ h4 {
   color: gold;
 }
 .authorities {
-  color: #16162d;
+  color: $azulOscuro;
   display: grid;
   text-align: center;
   padding: 0 5em 3em;
