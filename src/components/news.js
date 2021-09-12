@@ -1,4 +1,5 @@
 import React, { createRef } from 'react';
+import arrow from '../fonts/arrow.svg';
 
 import Article from './article';
 
@@ -46,18 +47,16 @@ class News extends React.Component {
           <button
             ref={previousBtn}
             onClick={this.handleClickPrevius}
-            aria-label="Anterior"
             className="carousel__anterior"
           >
-            <i className="fas fa-chevron-left"></i>
+            <img src={arrow} />
           </button>
           <button
             ref={afterBtn}
             onClick={this.handleClickAfter}
-            aria-label="Siguiente"
             className="carousel__siguiente"
           >
-            <i className="fas fa-chevron-right"></i>
+            <img src={arrow} />
           </button>
           <div className="titleNews">
             <h1>ULTIMAS NOVEDADES</h1>
