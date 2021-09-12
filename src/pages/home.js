@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import Hero from "../components/hero";
-import News from '../components/news'
-import About from '../components/about'
+import Hero from '../components/hero';
+import News from '../components/news';
+import About from '../components/about';
 
-import "../styles/landingStyles.css";
+import '../styles/landingStyles.scss';
 
 class Home extends React.Component {
   render() {
