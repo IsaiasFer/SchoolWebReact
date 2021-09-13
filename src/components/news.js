@@ -1,4 +1,5 @@
 import React, { createRef } from 'react';
+import arrow from '../fonts/arrow.svg';
 
 import Article from './article';
 
@@ -8,32 +9,33 @@ class News extends React.Component {
     this.containerNews = createRef();
     this.previousBtn = createRef();
     this.afterBtn = createRef();
-    this.news = createRef();
   }
   render() {
     let containerNews = this.containerNews;
     let previousBtn = this.previousBtn;
     let afterBtn = this.afterBtn;
-    let news = this.news;
 
     let moveTo = 0;
-
     this.handleClickAfter = () => {
       let widthContainerNew = containerNews.current.clientWidth;
-      let maxScroll = containerNews.current.scrollWidth;
-      // console.log(moveTo);
-      // console.log(containerNews);
+      let maxScroll = containerNews.current.scrollWidth - widthContainerNew;
       // console.log(maxScroll);
+      // let moveTo = 898;
       if (moveTo < maxScroll) {
         moveTo += widthContainerNew;
+        // console.log(moveTo);
         containerNews.current.scrollTo(moveTo, 0);
       }
       return moveTo;
     };
 
     this.handleClickPrevius = () => {
+      let maxScroll = containerNews.current.scrollWidth;
       let widthContainerNew = containerNews.current.clientWidth;
-      // console.log(moveTo);
+
+      // console.log(maxScroll);
+      // console.log(containerNews.current.clientWidth);
+
       if (moveTo > 0) {
         moveTo -= widthContainerNew;
         containerNews.current.scrollTo(moveTo, 0);
@@ -46,18 +48,16 @@ class News extends React.Component {
           <button
             ref={previousBtn}
             onClick={this.handleClickPrevius}
-            aria-label="Anterior"
             className="carousel__anterior"
           >
-            <i className="fas fa-chevron-left"></i>
+            <img src={arrow} />
           </button>
           <button
             ref={afterBtn}
             onClick={this.handleClickAfter}
-            aria-label="Siguiente"
             className="carousel__siguiente"
           >
-            <i className="fas fa-chevron-right"></i>
+            <img src={arrow} />
           </button>
           <div className="titleNews">
             <h1>ULTIMAS NOVEDADES</h1>
@@ -68,7 +68,6 @@ class News extends React.Component {
             style={{ scrollBehavior: 'smooth' }}
           >
             <Article
-              ref={news}
               NroDeTitulo="titleNew titleNew1"
               Redireccion="/formulario"
               Titulo="Encuesta acerca de pagina web"
