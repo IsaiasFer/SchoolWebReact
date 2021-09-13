@@ -9,32 +9,33 @@ class News extends React.Component {
     this.containerNews = createRef();
     this.previousBtn = createRef();
     this.afterBtn = createRef();
-    this.news = createRef();
   }
   render() {
     let containerNews = this.containerNews;
     let previousBtn = this.previousBtn;
     let afterBtn = this.afterBtn;
-    let news = this.news;
 
     let moveTo = 0;
-
     this.handleClickAfter = () => {
       let widthContainerNew = containerNews.current.clientWidth;
-      let maxScroll = containerNews.current.scrollWidth;
-      // console.log(moveTo);
-      // console.log(containerNews);
+      let maxScroll = containerNews.current.scrollWidth - widthContainerNew;
       // console.log(maxScroll);
+      // let moveTo = 898;
       if (moveTo < maxScroll) {
         moveTo += widthContainerNew;
+        // console.log(moveTo);
         containerNews.current.scrollTo(moveTo, 0);
       }
       return moveTo;
     };
 
     this.handleClickPrevius = () => {
+      let maxScroll = containerNews.current.scrollWidth;
       let widthContainerNew = containerNews.current.clientWidth;
-      // console.log(moveTo);
+
+      // console.log(maxScroll);
+      // console.log(containerNews.current.clientWidth);
+
       if (moveTo > 0) {
         moveTo -= widthContainerNew;
         containerNews.current.scrollTo(moveTo, 0);
@@ -67,7 +68,6 @@ class News extends React.Component {
             style={{ scrollBehavior: 'smooth' }}
           >
             <Article
-              ref={news}
               NroDeTitulo="titleNew titleNew1"
               Redireccion="/formulario"
               Titulo="Encuesta acerca de pagina web"
