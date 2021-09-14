@@ -18,7 +18,8 @@ class News extends React.Component {
     let moveTo = 0;
     this.handleClickAfter = () => {
       let widthContainerNew = containerNews.current.clientWidth;
-      let maxScroll = containerNews.current.scrollWidth - widthContainerNew;
+      let maxScroll =
+        containerNews.current.scrollWidth - widthContainerNew - 210;
       // console.log(maxScroll);
       // let moveTo = 898;
       if (moveTo < maxScroll) {
@@ -30,11 +31,7 @@ class News extends React.Component {
     };
 
     this.handleClickPrevius = () => {
-      let maxScroll = containerNews.current.scrollWidth;
       let widthContainerNew = containerNews.current.clientWidth;
-
-      // console.log(maxScroll);
-      // console.log(containerNews.current.clientWidth);
 
       if (moveTo > 0) {
         moveTo -= widthContainerNew;
@@ -74,6 +71,87 @@ class News extends React.Component {
               ImageURL="https://economipedia.com/wp-content/uploads/encuesta.jpg"
               SubtituloInterno="FORMULARIO"
               Descripcion="Encuesta de satisfaccion de pagina web"
+            />
+            <Article
+              NroDeTitulo="titleNew titleNew1"
+              Redireccion="/DICTAMEN T.E.L.Y F. E"
+              Titulo="DICTAMEN T.E.L.Y F.E"
+              ImageURL="https://i.imgur.com/gekZOKl.png"
+              SubtituloInterno="A LA COMUNIDAD EDUCATIVA"
+            />
+            <Article
+              NroDeTitulo="titleNew titleNew2"
+              Redireccion="/ASPIRANTES"
+              Titulo="NOMINA ASPIRANTES A T.E.L.Y F. E"
+              ImageURL="https://i.imgur.com/p9gt0Wq.png"
+              SubtituloInterno="A LA COMUNIDAD EDUCATIVA"
+            />
+            <Article
+              NroDeTitulo="titleNew titleNew3"
+              Redireccion="/CONVOCATORIA"
+              Titulo="CONVOCATORIA A CONCURSO"
+              ImageURL="https://imgur.com/vAct6K2.png"
+              SubtituloInterno="A LA COMUNIDAD EDUCATIVA"
+              Descripcion="Convocatorias a concurso según disposición interna Nº8"
+            />
+            <Article
+              NroDeTitulo="titleNew titleNew4"
+              Redireccion="/MERITO"
+              Titulo="ORDEN DE MÉRITO"
+              ImageURL="https://imgur.com/EXXYczU.png"
+              SubtituloInterno="ORDEN DE MÉRITO"
+              Descripcion="Orden de mérito en espacio curricular de bromatología"
+            />
+            <Article
+              NroDeTitulo="titleNew titleNew5"
+              Redireccion="/CONTINIUDAD PEDAGÓGICA"
+              Titulo="COMUNICADO A LAS FAMILIAS"
+              ImageURL="https://imgur.com/V9CQk3C.png"
+              SubtituloInterno="COMUNICA A LAS FAMILIAS SOBRE LA CONTINUIDAD PEDAGÓGICA"
+            />
+            <Article
+              NroDeTitulo="titleNew titleNew6"
+              Redireccion="/ASPIRANTES BROMATOLOGÍA"
+              Titulo="NOMINA DE ASPIRANTES PARA BROMATOLOGÍA"
+              ImageURL="https://imgur.com/OdYgV8t.png"
+              SubtituloInterno="NOMINA DE ASPIRANTES PARA BROMATOLOGÍA CON 3ºro 3ºra CS"
+            />
+            <Article
+              NroDeTitulo="titleNew titleNew7"
+              Redireccion="/LIBERACION CATEDRA"
+              Titulo="LIBERACIOND DE HORAS DE CÁTEDRA EN BROMATOLOGÍA"
+              ImageURL="https://imgur.com/OdYgV8t.png"
+              SubtituloInterno="LIBERACIOND DE HORAS DE CÁTEDRA EN BROMATOLOGÍA"
+              Descripcion="La dirección de la EETN3141 comunica un llamado a convocatoria para cubrir las horas de cátedra en la asignatura de bromatología"
+            />
+            <Article
+              NroDeTitulo="titleNew titleNew8"
+              Redireccion="/MESAS 07/2021"
+              Titulo="MESA DE EXÁMENES JULIO 2021"
+              ImageURL="https://imgur.com/OdYgV8t.png"
+              SubtituloInterno="CRONOGRAMA DE MESAS DE EXÁMENES JULIO 2021"
+            />
+            <Article
+              NroDeTitulo="titleNew titleNew9"
+              Redireccion="/MESAS 06/2021"
+              Titulo="CRONOGRAMA DE MESAS PARA COMPLETAR CARRERA"
+              ImageURL="https://imgur.com/OCI5g4Y.png"
+              SubtituloInterno="MESAS PARA COMPLETAR CARRERA"
+            />
+            <Article
+              NroDeTitulo="titleNew titleNew10"
+              Redireccion="/COMUNICADO DE MESAS JULIO"
+              Titulo="CRONOGRAMA DE MESAS PARA COMPLETAR CARRERA"
+              ImageURL="https://imgur.com/xdXD5x8.png"
+              SubtituloInterno="FECHAS DE MESAS EXAMENES DE JUNIO"
+            />
+            <Article
+              NroDeTitulo="titleNew titleNew11"
+              Redireccion="/CONCURSO GUEMES"
+              Titulo="CONCURSO ARTISTICO GUEMES"
+              ImageURL="https://imgur.com/mqJISK6.png"
+              SubtituloInterno="CERTAMEN ARTISTICO DEL GRAL. GUEMES"
+              Descripcion="Concurso artistico destinado a alumnos, familias y todo el personal de la institución"
             />
             <Article
               NroDeTitulo="titleNew titleNew2"
