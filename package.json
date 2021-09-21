@@ -13,7 +13,7 @@
     "sass": "^1.39.0",
     "web-vitals": "^1.1.1"
   },
-  "homepage": "https://eetn3141.edu.ar",
+  "homepage": "http://eetn3141.edu.ar",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
