@@ -7,7 +7,11 @@ import About from '../components/about';
 import '../styles/landingStyles.scss';
 
 class Home extends React.Component {
+  componentWillUnmount(){
+    window.scroll(0, 0)
+  }
   render() {
+    window.scroll(0, 0)
     return (
       <React.Fragment>
         <Hero />
