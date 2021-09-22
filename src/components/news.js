@@ -1,5 +1,4 @@
 import React, { createRef } from 'react';
-// import arrow from '../fonts/arrow.svg';
 
 import Article from './article';
 
@@ -206,64 +205,6 @@ class News extends React.Component {
               Titulo="DICTAMEN DISPOSICION INTERNA"
               ImageURL="https://imgur.com/f2WfyqR.png"
               SubtituloInterno="INTEGRANTES DE LA DISPOSICION INTERNA"
-              Descripcion=""
-            />
-
-            <Article
-              NroDeTitulo="titleNew titleNew6"
-              Redireccion="/teesperamos"
-              Titulo="TE ESPERAMOS EN LA TECNICA Nº3141"
-              ImageURL="https://i.imgur.com/wTcOQQJ.png"
-              SubtituloInterno="VIDEO DE BIENVENIDA"
-              Descripcion=""
-            />
-            <Article
-              NroDeTitulo="titleNew titleNew7"
-              Redireccion="news/formulario de inscripcion.html"
-              Titulo="FORMULARIO DE INSCRIPCION DE EXAMENES"
-              ImageURL="https://imgur.com/SOGH479.png"
-              SubtituloInterno="Descargar formulario de Inscripción EXAMENES OCTUBRE-NOVIEMBRE 2020"
-              Descripcion=""
-            />
-            <Article
-              NroDeTitulo="titleNew titleNew8"
-              Redireccion="news/comisiones evaluadoras.html"
-              Titulo="COMISIONES EVALUADORAS"
-              ImageURL="https://imgur.com/mqhxVyY.png"
-              SubtituloInterno="DESCARGAR COMISIONES EVALUADORAS OCTUBRE-NOVIEMBRE 2020"
-              Descripcion=""
-            />
-            <Article
-              NroDeTitulo="titleNew titleNew9"
-              Redireccion="news/protocolo mesas de examenes.html"
-              Titulo="PROTOCOLO - MESAS EXAMENES"
-              ImageURL="https://imgur.com/QFUU9mv.png"
-              SubtituloInterno="Comunicado"
-              Descripcion="Comunicado a la comunidad educativa de la E.E.T. Nº 3141 sorteo de turnos para ingresantes al periodo
-                lectivo 2021"
-            />
-            <Article
-              NroDeTitulo="titleNew titleNew10"
-              Redireccion="news/comunicado a familias.html"
-              Titulo="COMUNICADO FAMILAS DE LA 3141"
-              ImageURL="https://imgur.com/DeTtl2U.png"
-              SubtituloInterno="DICTAMEN DISPOSICIÓN INTERNA N° 1/2020 E.E.T. N° 3141"
-              Descripcion=""
-            />
-            <Article
-              NroDeTitulo="titleNew titleNew11"
-              Redireccion="news/feliz dia students.html"
-              Titulo="FELIZ DÍA DEL ESTUDIANTE"
-              ImageURL="https://imgur.com/pwp8JD4.png"
-              SubtituloInterno="Video para todos los estudiantes del establecimiento EETN3141"
-              Descripcion=""
-            />
-            <Article
-              NroDeTitulo="titleNew titleNew12"
-              Redireccion="news/promo 2020.html"
-              Titulo="QUERIDA PROMO 2020... SALUDOS!!"
-              ImageURL="https://imgur.com/v5DZMXf.png"
-              SubtituloInterno="PROMO 2020!!"
               Descripcion=""
             />
           </div>

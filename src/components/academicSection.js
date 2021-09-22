@@ -181,9 +181,9 @@ export default class academicSection extends Component {
           >
             <div className="buttonsContainer">
               <a
-                id="openTitle"
+                id="openTitle "
                 onClick={(e) => this.handleClickContents(e, 0)}
-                className="titleAcademic"
+                className="titleAcademic btna"
                 ref={this.openTitle}
               >
                 Titulo
@@ -192,7 +192,7 @@ export default class academicSection extends Component {
               <a
                 id="openStudyPlan"
                 onClick={(e) => this.handleClickContents(e, 1)}
-                className="studyPlan"
+                className="studyPlan btna"
                 ref={this.openStudyPlan}
               >
                 Plan de estudio

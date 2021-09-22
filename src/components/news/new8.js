@@ -11,8 +11,9 @@ function new8(props) {
       <div className="linksContainer">
         <a
           href="https://drive.google.com/file/d/1QjIs67V61sH6UR10qZbqMLF8Gy5cqqk1/view?usp=sharing"
-          class="linkNews"
+          className="linkNews"
           target="_blank"
+          rel="noreferrer"
         >
           Descargar Cronograma
         </a>

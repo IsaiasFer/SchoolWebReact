@@ -1,4 +1,5 @@
 /* -- ----------START-ACADEMIC-CSS------------ -- */
+
 .academic {
   display: grid;
   grid-template-columns: 30% 60% 1fr;
@@ -52,7 +53,7 @@
   font-size: 1.4em;
 }
 .column1Container a {
-  font-size: 1.4em;
+  font-size: 1em;
 }
 .column2Container button {
   font-size: 1.4em;
@@ -218,14 +219,6 @@ button:hover {
 button:active {
   background: #16162d;
 }
-/* .column1Container a {
-  display: flex;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-} */
 .academic a:hover {
   background: #3297cb;
 }
@@ -286,7 +279,7 @@ button:active {
   .buttonsContainer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 20% 1fr 20% 1fr 20% 1fr 20% 15%;
+    grid-template-rows: 1fr 20% 1fr 20% 1fr 20% 1fr 20% 1fr;
     grid-template-areas:
       '.'
       'titleAcademic'
@@ -325,14 +318,13 @@ button:active {
   .infoTeachersContent {
     font-family: Barlow Condensed;
     overflow-y: scroll;
-    font-size: 30px;
-    cursor: pointer;
+    font-size: 20px;
     outline: none;
     border: none;
   }
   .infoTeachersContent a {
     color: revert;
-    font-size: 30px;
+    font-size: 1em;
   }
   .infoTeachersContent h1 {
     font-size: 30px;
@@ -356,11 +348,14 @@ button:active {
   }
 }
 @media screen and (max-width: 321px) {
-  .column1Container a {
-    font-size: 1.4em;
-  }
+  /* .column1Container a {
+    font-size: 1em;
+  } */
   .studyProgramContent {
     font-size: 0.9em;
+  }
+  .btna a {
+    font-size: 1.4em;
   }
 }
 /* ----------------------------END-ACADEMIC-RESPONSIVE--------------------- */

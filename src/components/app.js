@@ -18,7 +18,6 @@ import Formulario from './news/Formulario';
 import Comisiones from './news/comisiones';
 import SorteoTurnos from './news/sorteoTurnos';
 import Bioseguridad from './news/bioseguridad';
-import TeEsperamos from './news/teEsperamos';
 import Dictamen from './news/dictamenInterno';
 import new1 from './news/new1';
 import new2 from './news/new2';
@@ -55,7 +54,6 @@ class App extends React.Component {
           <Route exact path="/sorteo" component={SorteoTurnos} />
           <Route exact path="/bioseguridad" component={Bioseguridad} />
           <Route exact path="/dictamen" component={Dictamen} />
-          <Route exact path="/teesperamos" component={TeEsperamos} />
           <Route exact path="/DICTAMEN T.E.L.Y F. E" component={new1} />
           <Route exact path="/ASPIRANTES" component={new2} />
           <Route exact path="/CONVOCATORIA" component={new3} />
