@@ -88,15 +88,11 @@
   cursor: pointer;
   color: #fff;
   display: block;
-  // width: 50%;
   z-index: 1;
   position: absolute;
   right: 1%;
   top: 50%;
-  opacity: 40%;
-  img {
-    background: none;
-  }
+  font-size: 30px;
 }
 .carousel__anterior {
   left: 1%;
@@ -106,13 +102,11 @@
 }
 .carousel__anterior:hover,
 .carousel__siguiente:hover {
-  opacity: 100%;
+  // opacity: 100%;
+  color: #ffffff70;
   border: none;
   outline: none;
   background: none;
-  img {
-    background: none;
-  }
 }
 .titleNews {
   h1 {
