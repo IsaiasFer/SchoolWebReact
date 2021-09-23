@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import AcademicSection from '../components/academicSection';
 
-import '../styles/academic.css';
+import '../styles/academic.scss';
 
 export default class academic extends Component {
   render() {

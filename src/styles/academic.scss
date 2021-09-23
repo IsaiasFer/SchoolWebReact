@@ -1,5 +1,4 @@
-/* -- ----------START-ACADEMIC-CSS------------ -- */
-
+/* -- --------START-ACADEMIC-CONTAINERS----- -- */
 .academic {
   display: grid;
   grid-template-columns: 30% 60% 1fr;
@@ -16,23 +15,36 @@
   align-items: center;
   color: white;
   position: relative;
-}
-.academic h1 {
-  display: inherit;
-  text-align: center;
-  align-items: center;
-}
-.column1Container {
-  grid-area: column1Container;
-}
-.column2Container {
-  width: 100%;
-  height: 100%;
-  grid-area: column2Container;
-  display: flex;
+
+  h1 {
+    display: inherit;
+    align-items: center;
+  }
+  button {
+    outline: none;
+    border: none;
+    color: white;
+    font-family: Segoe UI;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 0 1% 0 0;
+  }
+  button:hover {
+    background: #3297cb;
+  }
+  button:active {
+    background: #16162d;
+  }
+  a:hover {
+    background: #3297cb;
+  }
+  a:active {
+    background: #16162d;
+  }
 }
 .column1Container {
   display: grid;
+  grid-area: column1Container;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: 'buttonsContainer';
@@ -48,15 +60,21 @@
   color: white;
   font-family: Segoe UI;
   font-weight: 400;
+  button {
+    font-size: 1.4em;
+  }
+  a {
+    font-size: 1.4em;
+  }
 }
-.column1Container button {
-  font-size: 1.4em;
-}
-.column1Container a {
-  font-size: 1em;
-}
-.column2Container button {
-  font-size: 1.4em;
+.column2Container {
+  width: 100%;
+  height: 100%;
+  grid-area: column2Container;
+  display: flex;
+  button {
+    font-size: 1.4em;
+  }
 }
 .buttonsContainer {
   display: grid;
@@ -77,17 +95,9 @@
   justify-items: center;
   align-items: center;
 }
-.titleAcademic {
-  width: 60%;
-  height: 60%;
-  grid-area: titleAcademic;
-  border-radius: 100px;
-  background: #314d81;
-  display: flex;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-}
+/* -- --------END-ACADEMIC-CONTAINERS----- -- */
+
+/* -- --------START-ACADEMIC-CONTENTS----- -- */
 .studyPlan {
   width: 60%;
   height: 60%;
@@ -110,6 +120,17 @@
   align-items: center;
   justify-content: center;
 }
+.titleAcademic {
+  width: 60%;
+  height: 60%;
+  grid-area: titleAcademic;
+  border-radius: 100px;
+  background: #314d81;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
 .infoTeachers {
   width: 60%;
   height: 60%;
@@ -121,6 +142,9 @@
   align-items: center;
   justify-content: center;
 }
+/* -- --------END-ACADEMIC-CONTENTS----- -- */
+
+/* -- --------START-CONTENTS-ACADEMIC-CONTENTS----- -- */
 .titleContent {
   width: 100%;
   height: 100%;
@@ -131,29 +155,28 @@
   height: 100%;
   display: none;
 }
-/* -- ----------START-STUDY-PROGRAM-CONTENT------------ -- */
 .studyProgramContent {
   width: 100%;
   height: 100%;
   display: none;
-}
-.studyProgramContent h1 {
-  margin: 0.5em;
-  font-size: 1.8em;
-  color: gold;
-}
-.studyProgramContent p {
-  font-size: 1.4em;
-  font-weight: 600;
-  margin: 1em;
+  h1 {
+    margin: 0.5em;
+    font-size: 1.8em;
+    color: gold;
+  }
+  p {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 1em;
+  }
 }
 .optionsStudyProgramContent {
   height: 10%;
   width: auto;
-}
-.optionsStudyProgramContent button {
-  background: rgba(49, 49, 100, 1);
-  width: 15%;
+  button {
+    background: rgba(49, 49, 100, 1);
+    width: 15%;
+  }
 }
 .firstYearContentCB {
   display: none;
@@ -173,12 +196,21 @@
 .fourthYearContentCS {
   display: none;
 }
-/* -- ----------END-STUDY-PROGRAM-CONTENT------------ -- */
-
+//
 .infoTeachersContent {
   width: 100%;
   height: 100%;
   display: none;
+  p {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 1em;
+  }
+  h1 {
+    margin: 0.5em;
+    font-size: 1.8em;
+    color: gold;
+  }
 }
 .infoTeachersContent1 {
   display: none;
@@ -186,54 +218,12 @@
 .infoTeachersContent2 {
   display: none;
 }
-.infoTeachersContent p {
-  font-size: 1.4em;
-  font-weight: 600;
-  margin: 1em;
-}
-.infoTeachersContent h1 {
-  margin: 0.5em;
-  font-size: 1.8em;
-  color: gold;
-}
 .optionInfoTeachersContent {
   width: auto;
-}
-.optionInfoTeachersContent button {
-  background: rgba(49, 49, 100, 1);
-  width: 15%;
-}
-.academic button {
-  outline: none;
-  border: none;
-  color: white;
-  font-family: Segoe UI;
-  font-weight: 400;
-  /* font-size: 1.4em; */
-  cursor: pointer;
-  margin: 0 1% 0 0;
-}
-button:hover {
-  background: #3297cb;
-}
-button:active {
-  background: #16162d;
-}
-.academic a:hover {
-  background: #3297cb;
-}
-.academic a:active {
-  background: #16162d;
-}
-.column2Container a {
-  outline: none;
-  border: none;
-  color: revert;
-  font-family: Barlow Condensed;
-  font-weight: 500;
-  font-size: 1em;
-  cursor: pointer;
-  display: inline;
+  button {
+    background: rgba(49, 49, 100, 1);
+    width: 15%;
+  }
 }
 .backButtonDivices425px {
   display: none;
@@ -241,21 +231,21 @@ button:active {
 .max-width-425px {
   display: none;
 }
-/* -- ----------END-ACADEMIC-CSS------------ -- */
+/*------END-CONTENTS-ACADEMIC-CONTENTS------- */
 
-/* ----------------------------START-ACADEMIC-RESPONSIVE--------------------- */
 @media screen and (max-width: 768px) {
   .academic {
     grid-template-columns: 30% 68% 1fr;
   }
-  .column1Container button {
-    font-size: 1.25em;
-  }
-  .column1Container a {
-    font-size: 1.25em;
+  .column1Container {
+    button {
+      font-size: 1.25em;
+    }
+    a {
+      font-size: 1.25em;
+    }
   }
 }
-
 @media screen and (max-width: 425px) {
   .academic {
     display: grid;
@@ -273,9 +263,6 @@ button:active {
     color: white;
     font-size: 1.4em;
   }
-  /* .column1Container button {
-    font-size: 2em;
-  } */
   .buttonsContainer {
     display: grid;
     grid-template-columns: 1fr;
@@ -296,42 +283,38 @@ button:active {
     align-items: center;
     font-size: 1em;
   }
-  /* .buttonsContainer button {
-    font-size: 1em;
-  } */
   .studyProgramContent {
     font-family: Barlow Condensed;
     overflow-y: scroll;
+    align-content: flex-start;
+    p a {
+      outline: none;
+      border: none;
+      color: revert;
+      font-family: Barlow Condensed;
+      font-weight: 500;
+      font-size: 22px;
+      cursor: pointer;
+    }
   }
-  .studyProgramContent p a {
-    outline: none;
-    border: none;
-    color: revert;
-    font-family: Barlow Condensed;
-    font-weight: 500;
-    font-size: 30px;
-    cursor: pointer;
-  }
-  /* .studyProgramContent p {
-    font-size: 30px;
-  } */
   .infoTeachersContent {
     font-family: Barlow Condensed;
     overflow-y: scroll;
     font-size: 20px;
     outline: none;
     border: none;
-  }
-  .infoTeachersContent a {
-    color: revert;
-    font-size: 1em;
-  }
-  .infoTeachersContent h1 {
-    font-size: 30px;
-    margin: 0;
-  }
-  .infoTeachersContent p {
-    font-size: 30px;
+    align-content: flex-start;
+    a {
+      color: revert;
+      font-size: 22px;
+    }
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+    p {
+      font-size: 22px;
+    }
   }
   .backButtonDivices425px {
     background: #3297cb;
@@ -348,9 +331,6 @@ button:active {
   }
 }
 @media screen and (max-width: 321px) {
-  /* .column1Container a {
-    font-size: 1em;
-  } */
   .studyProgramContent {
     font-size: 0.9em;
   }
@@ -358,4 +338,3 @@ button:active {
     font-size: 1.4em;
   }
 }
-/* ----------------------------END-ACADEMIC-RESPONSIVE--------------------- */
