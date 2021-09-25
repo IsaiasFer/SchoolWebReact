@@ -7,7 +7,11 @@ import About from '../components/about';
 import '../styles/landingStyles.scss';
 
 class Home extends React.Component {
-  componentWillUnmount(){
+componentDidMount(){
+  document.title="Web E.E.T.N° 3141"
+}
+
+  componentWillUnmount() {
     window.scroll(0, 0)
   }
   render() {
