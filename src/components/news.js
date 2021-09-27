@@ -70,6 +70,13 @@ class News extends React.Component {
             />
             <Article
               NroDeTitulo="titleNew titleNew1"
+              Redireccion="/Talleres 23_09"
+              Titulo="TALLET DE TEATRO, MARATÓN NACIONAL DE LECTURA Y MÁS"
+              ImageURL="https://imgur.com/KBbnF6O.jpg"
+              SubtituloInterno="Taller de Eco ladrillos, Taller de Teatro, Maratón Nacional de Lectura, Promoción de la lectura"
+            />
+            <Article
+              NroDeTitulo="titleNew titleNew1"
               Redireccion="/DICTAMEN T.E.L.Y F. E"
               Titulo="DICTAMEN T.E.L.Y F.E"
               ImageURL="https://i.imgur.com/gekZOKl.png"

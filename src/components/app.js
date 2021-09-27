@@ -30,6 +30,7 @@ import new8 from './news/new8';
 import new9 from './news/new9';
 import new10 from './news/new10';
 import new11 from './news/new11';
+import talleres_24_09 from './news/talleres24_09';
 
 class App extends React.Component {
   componentDidMount() {
@@ -65,6 +66,7 @@ class App extends React.Component {
           <Route exact path="/MESAS 06/2021" component={new9} />
           <Route exact path="/COMUNICADO DE MESAS JULIO" component={new10} />
           <Route exact path="/CONCURSO GUEMES" component={new11} />
+          <Route exact path="/Talleres 23_09" component={talleres_24_09} />
 
           <Route component={NotFound} />
         </Switch>

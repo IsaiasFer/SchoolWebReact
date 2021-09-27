@@ -1,16 +1,14 @@
-import React from "react";
+import React from 'react';
 
-import "../styles/newsStyles.css"
+import '../styles/newsStyles.css';
 
 function NoticiaHeader(props) {
   return (
-      <React.Fragment>
-      <h3 class="date">Domingo, 4 de Julio de 2021</h3>
-      <h1 class="title">
-        {props.title}
-      </h1>
-      <div class="autorContainer">
-        <h3 class="autor">
+    <React.Fragment>
+      <h3 className="date">{props.date}</h3>
+      <h1 className="title">{props.title}</h1>
+      <div className="autorContainer">
+        <h3 className="autor">
           por <b>E.E.T. N°3141</b>
         </h3>
         <figure>
@@ -20,9 +18,9 @@ function NoticiaHeader(props) {
           />
         </figure>
       </div>
-      <h2 class="subtitle ">{props.subtitle}</h2>
-      </React.Fragment>
+      <h2 className="subtitle ">{props.subtitle}</h2>
+    </React.Fragment>
   );
 }
 
-export default NoticiaHeader
+export default NoticiaHeader;
