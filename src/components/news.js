@@ -1,6 +1,7 @@
-import React, { createRef } from 'react';
+import React, { createRef } from "react";
 
-import Article from './article';
+import Article from "./article";
+import ExternArticle from "./externArticle";
 
 class News extends React.Component {
   constructor(props) {
@@ -58,8 +59,16 @@ class News extends React.Component {
           <div
             ref={containerNews}
             className="carouselList"
-            style={{ scrollBehavior: 'smooth' }}
+            style={{ scrollBehavior: "smooth" }}
           >
+            <ExternArticle
+              NroDeTitulo="titleNew titleNew1"
+              Redireccion="https://eetn3141.edu.ar/news/taller-arte-semilla-siembra/"
+              Titulo="Taller de arte, semilla y siembra!"
+              ImageURL="https://i.imgur.com/L5xEq7C.jpg"
+              SubtituloInterno="Taller"
+              Descripcion="te invitamos a participar de este evento!"
+            />
             <Article
               NroDeTitulo="titleNew titleNew1"
               Redireccion="/formulario"
@@ -69,7 +78,7 @@ class News extends React.Component {
               Descripcion="Encuesta de satisfaccion de pagina web"
             />
             <Article
-              NroDeTitulo="titleNew titleNew1"
+              NroDeTitulo="titleNew titleNew2"
               Redireccion="/DICTAMEN T.E.L.Y F. E"
               Titulo="DICTAMEN T.E.L.Y F.E"
               ImageURL="https://i.imgur.com/gekZOKl.png"
