@@ -1,7 +1,7 @@
-import React, { createRef } from "react";
+import React, { createRef } from 'react';
 
-import Article from "./article";
-import ExternArticle from "./externArticle";
+import Article from './article';
+import ExternArticle from './externArticle';
 
 class News extends React.Component {
   constructor(props) {
@@ -59,7 +59,7 @@ class News extends React.Component {
           <div
             ref={containerNews}
             className="carouselList"
-            style={{ scrollBehavior: "smooth" }}
+            style={{ scrollBehavior: 'smooth' }}
           >
             <ExternArticle
               NroDeTitulo="titleNew titleNew1"
