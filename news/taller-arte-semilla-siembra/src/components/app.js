@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './header';
 import Footer from './footer';
 import NavBarContainerNew from './navBarContainerNew';
+import ShareSection from './sharelinks';
 
 
 import Noticia from "./noticia"
@@ -21,6 +22,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="" component={Noticia} />
         </Switch>
+        <ShareSection link={window.location.href}/>
         <Footer />
       </BrowserRouter>
     );
