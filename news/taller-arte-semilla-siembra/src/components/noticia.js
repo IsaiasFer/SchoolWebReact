@@ -7,7 +7,7 @@ class Noticia extends React.Component {
     return (
       <section className="newContainer">
         <NoticiaHeader
-          date="Lunes, 9 de Septiembre de 2021"
+          date="Lunes, 27 de Septiembre de 2021"
           title="Taller arte, semilla y siembra"
           subtitle="Reservá tu lugar!"
         />
