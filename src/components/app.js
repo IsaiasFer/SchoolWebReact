@@ -14,7 +14,7 @@ import '../styles/platform.scss';
 import { burguerButton, menuLateral } from '../scripts/functions';
 import NotFound from './notFound';
 // ---------NEWS---------
-import Formulario from './news/Formulario';
+// import Formulario from './news/Formulario';
 import Comisiones from './news/comisiones';
 import SorteoTurnos from './news/sorteoTurnos';
 import Bioseguridad from './news/bioseguridad';
@@ -50,7 +50,6 @@ class App extends React.Component {
           <Route exact path="/plataformas" component={PrePlatform} />
           <Route exact path="/ubicacion" component={Locacion} />
           <Route exact path="/academico" component={Academico} />
-          <Route exact path="/formulario" component={Formulario} />
           <Route exact path="/comisiones" component={Comisiones} />
           <Route exact path="/sorteo" component={SorteoTurnos} />
           <Route exact path="/bioseguridad" component={Bioseguridad} />

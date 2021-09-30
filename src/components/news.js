@@ -69,9 +69,9 @@ class News extends React.Component {
               SubtituloInterno="Taller"
               Descripcion="te invitamos a participar de este evento!"
             />
-            <Article
+            <ExternArticle
               NroDeTitulo="titleNew titleNew1"
-              Redireccion="/formulario"
+              Redireccion="https://eetn3141.edu.ar/news/formulario/"
               Titulo="Encuesta acerca de pagina web"
               ImageURL="https://economipedia.com/wp-content/uploads/encuesta.jpg"
               SubtituloInterno="FORMULARIO"
