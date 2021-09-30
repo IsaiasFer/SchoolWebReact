@@ -1,0 +1,21 @@
+.socialIcons{
+    width: 2.5em;
+    height: 2.5em;
+    background: none;
+    margin: .5em 1em;
+}
+.shareSection{
+    padding: 1em 6.5em;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:767px) {
+    .shareSection{
+        padding: 1em 0 3em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

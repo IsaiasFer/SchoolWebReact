@@ -7,6 +7,7 @@ import NavBarContainerNew from './navBarContainerNew';
 
 import Noticia from "./noticia"
 import { burguerButton } from '../scripts/functions';
+import ShareSection from './sharelinks';
 /* import NotFound from './notFound'; */
 
 class App extends React.Component {
@@ -21,6 +22,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="" component={Noticia} />
         </Switch>
+        <ShareSection link={window.location.href}/>
         <Footer />
       </BrowserRouter>
     );
