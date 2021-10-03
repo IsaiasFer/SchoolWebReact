@@ -1,5 +1,4 @@
 @import 'variables.scss';
-
 .content {
   background: $degradado;
 }
@@ -24,6 +23,26 @@
       background-color: silver;
     }
   }
+}
+button {
+  outline: none;
+  border: none;
+  color: white;
+  font-family: Segoe UI;
+  font-weight: 400;
+  cursor: pointer;
+  margin: 0 1% 0 0;
+  background: #314d81;
+}
+button:hover {
+  background: #3297cb;
+}
+button:active {
+  background: #16162d;
+}
+.year2000 {
+  width: 50%;
+  height: 50%;
 }
 .pageTitle {
   color: $azulOscuro;

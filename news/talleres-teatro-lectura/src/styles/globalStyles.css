@@ -2,10 +2,6 @@
   border: RED 1px solid;
 } */
 /* FUENTES */
-/* body {
-  background: chartreuse;
-  z-index: 10;
-} */
 img {
   background: linear-gradient(
     135deg,
@@ -15,21 +11,21 @@ img {
 }
 /* FUENTES */
 @font-face {
-  font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?6ppo9d');
-  src: url('../fonts/icomoon.eot?6ppo9d#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?6ppo9d') format('truetype'),
-    url('../fonts/icomoon.woff?6ppo9d') format('woff'),
-    url('../fonts/icomoon.svg?6ppo9d#icomoon') format('svg');
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?6ppo9d");
+  src: url("../fonts/icomoon.eot?6ppo9d#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?6ppo9d") format("truetype"),
+    url("../fonts/icomoon.woff?6ppo9d") format("woff"),
+    url("../fonts/icomoon.svg?6ppo9d#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^='icon-'],
-[class*=' icon-'] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -42,17 +38,18 @@ img {
 }
 
 .icon-menu1:before {
-  content: '\e900';
+  content: "\e900";
 }
 .icon-menu:before {
-  content: '\e9bd';
+  content: "\e9bd";
 }
 
 body {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   margin: 0;
   color: white;
   scroll-behavior: smooth;
+  background: linear-gradient(135deg, #3297cb, #313164);
 }
 /* ----START-HEADER----- */
 header {
@@ -167,7 +164,7 @@ figure {
 }
 .plataformasButton span,
 .volverButton span {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 30px;
   font-weight: bold;
   color: white;
@@ -191,8 +188,8 @@ footer {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 90% 10%;
   grid-template-areas:
-    'contactSchool contactFafe'
-    'copyright copyright';
+    "contactSchool contactFafe"
+    "copyright copyright";
   /* width: 100vw; */
   /* height: 300px; */
   height: auto;
@@ -230,7 +227,7 @@ footer {
 .titleContactSchool {
   display: inherit;
   font-size: 1.7em;
-  font-family: 'Barlow Condensed', Roboto;
+  font-family: "Barlow Condensed", Roboto;
   margin: 0 1% 0;
 }
 .titleContactSchool h2 {
@@ -259,8 +256,8 @@ footer {
   grid-template-rows: 60% 40%;
   grid-template-columns: 1fr;
   grid-template-areas:
-    'logotypeFafe'
-    'socialNetworks';
+    "logotypeFafe"
+    "socialNetworks";
   justify-items: center;
 }
 .logotypeFafe {
@@ -367,7 +364,7 @@ svg {
 /* burguer-buttoN-START */
 .burguer-button {
   text-align: center;
-  /* line-height: 40px; */
+  line-height: 40px;
   display: none;
   width: 40px;
   height: 40px;
@@ -378,11 +375,8 @@ svg {
   left: 7px;
   top: 7px;
   color: #eeeeee;
-  padding: 6px 8px;
 }
-.burguer-button svg {
-  width: 22px;
-}
+
 /* burguer-button-END*/
 /* START-RESPONSIVE */
 @media screen and (max-width: 1110px) {

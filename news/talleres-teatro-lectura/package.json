@@ -1,18 +1,17 @@
 {
-  "name": "schoolwebreact",
+  "name": "taller-teatro-lectura",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.10",
-    "@testing-library/react": "^11.2.6",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.3",
-    "web-vitals": "^1.1.1"
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.2"
   },
-  "homepage": "https://eetn3141.edu.ar",
+  "homepage": "https://eetn3141.edu.ar/news/talleres-teatro-lectura/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -36,19 +35,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "A new version of the SchoolWeb , this time on React",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/IsaiasFer/SchoolWebReact.git"
-  },
-  "author": "Fafe",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/IsaiasFer/SchoolWebReact/issues"
-  },
-  "devDependencies": {
-    "sass": "^1.42.1"
   }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 /* import NavBar from './navBar' */
+// import '../styles/landingStyles.scss';
 
 class Hero extends React.Component {
   render() {

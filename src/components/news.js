@@ -63,6 +63,14 @@ class News extends React.Component {
           >
             <ExternArticle
               NroDeTitulo="titleNew titleNew1"
+              Redireccion="https://eetn3141.edu.ar/news/formulario/"
+              Titulo="Encuesta acerca de pagina web"
+              ImageURL="https://economipedia.com/wp-content/uploads/encuesta.jpg"
+              SubtituloInterno="FORMULARIO"
+              Descripcion="Encuesta de satisfaccion de pagina web"
+            />
+            <ExternArticle
+              NroDeTitulo="titleNew titleNew1"
               Redireccion="https://eetn3141.edu.ar/news/taller-arte-semilla-siembra/"
               Titulo="Taller de arte, semilla y siembra!"
               ImageURL="https://i.imgur.com/L5xEq7C.jpg"
@@ -71,11 +79,17 @@ class News extends React.Component {
             />
             <ExternArticle
               NroDeTitulo="titleNew titleNew1"
-              Redireccion="https://eetn3141.edu.ar/news/formulario/"
-              Titulo="Encuesta acerca de pagina web"
-              ImageURL="https://economipedia.com/wp-content/uploads/encuesta.jpg"
-              SubtituloInterno="FORMULARIO"
-              Descripcion="Encuesta de satisfaccion de pagina web"
+              Redireccion="https://eetn3141.edu.ar/news/talleres-teatro-lectura/"
+              Titulo="Maraton Nacional de Lectura y talleres"
+              ImageURL="https://imgur.com/KBbnF6O.jpg"
+              SubtituloInterno="Talleres llevados a cabo el 24/09/21"
+            />
+            <ExternArticle
+              NroDeTitulo="titleNew titleNew1"
+              Redireccion="https://eetn3141.edu.ar/news/preinscripciones-2022/"
+              Titulo="Preinscripciones ingresantes 2022"
+              ImageURL="https://imgur.com/bL7SrPk.jpg"
+              SubtituloInterno="A partir del 01/10/21 estaran abietas las inscripciones para ingresantes del 2022"
             />
             <Article
               NroDeTitulo="titleNew titleNew2"
