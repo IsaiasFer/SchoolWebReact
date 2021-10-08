@@ -91,6 +91,13 @@ class News extends React.Component {
               ImageURL="https://imgur.com/bL7SrPk.jpg"
               SubtituloInterno="A partir del 01/10/21 estaran abietas las inscripciones para ingresantes del 2022"
             />
+            <ExternArticle
+              NroDeTitulo="titleNew titleNew1"
+              Redireccion="https://eetn3141.edu.ar/news/mesa-examenes/"
+              Titulo="Mesa de exámenes"
+              ImageURL="https://imgur.com/jbvQHth.png"
+              SubtituloInterno="A partir del 12/10/21 estaran abietas las inscripciones para las mesas de exámenes para completar carrera-equivalencia-libres"
+            />
             <Article
               NroDeTitulo="titleNew titleNew2"
               Redireccion="/DICTAMEN T.E.L.Y F. E"

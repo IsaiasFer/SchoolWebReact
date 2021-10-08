@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../styles/newsStyles.css';
+import '../styles/newsStyles.scss';
 
 function NoticiaHeader(props) {
   return (

@@ -11,7 +11,7 @@ class Noticia extends React.Component {
           title="Taller arte, semilla y siembra"
           subtitle="Reservá tu lugar!"
         />
-        <p className="content">
+        <p className="textContainer">
           Hola !!! Taller de Arte , Semilla y Siembra para la niñez , comienza
           el 4 de octubre . Reserva tu lugar con pre- inscripción WhatsApp al
           3875941636. El lugar de encuentro y juegos artísticos es en Necochea

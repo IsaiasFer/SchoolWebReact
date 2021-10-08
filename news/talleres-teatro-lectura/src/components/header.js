@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class Header extends React.Component {
   render() {
@@ -11,7 +11,9 @@ class Header extends React.Component {
           />
         </figure>
         <h1>ESCUELA DE EDUCACIÓN TÉCNICA N°3141</h1>
-        <i className="icon-menu burguer-button"></i>
+        <button className="burguer-button">
+          <i className="fas fa-bars"></i>
+        </button>
       </header>
     );
   }

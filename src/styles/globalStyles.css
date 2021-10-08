@@ -1,7 +1,6 @@
 /* * {
   border: RED 1px solid;
 } */
-/* FUENTES */
 /* body {
   background: chartreuse;
   z-index: 10;
@@ -13,41 +12,6 @@ img {
     rgba(49, 49, 100, 1) 100%
   );
 }
-/* FUENTES */
-@font-face {
-  font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?6ppo9d');
-  src: url('../fonts/icomoon.eot?6ppo9d#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?6ppo9d') format('truetype'),
-    url('../fonts/icomoon.woff?6ppo9d') format('woff'),
-    url('../fonts/icomoon.svg?6ppo9d#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-[class^='icon-'],
-[class*=' icon-'] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-menu1:before {
-  content: '\e900';
-}
-.icon-menu:before {
-  content: '\e9bd';
-}
-
 body {
   font-family: 'Barlow Condensed', sans-serif;
   margin: 0;
@@ -366,19 +330,21 @@ svg {
 /* END-PLATFORMS */
 /* burguer-buttoN-START */
 .burguer-button {
-  text-align: center;
-  /* line-height: 40px; */
+  justify-content: center;
+  align-items: center;
+  line-height: 40px;
   display: none;
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  border: none;
   background: rgba(55, 58, 64, 0.5);
   position: fixed;
   z-index: 4;
   left: 7px;
   top: 7px;
   color: #eeeeee;
-  padding: 6px 8px;
+  font-size: 24px;
 }
 .burguer-button svg {
   width: 22px;
@@ -471,7 +437,7 @@ svg {
     width: 100%;
   }
   .burguer-button {
-    display: block;
+    display: flex;
   }
   .list-ul {
     position: fixed;

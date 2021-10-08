@@ -1,9 +1,8 @@
-/* .navContainer{
-    position: sticky;
-    top: -1px;
-} */
 .newContainer {
   padding: 1em 6.5em 1em 6.5em;
+  h2 {
+    color: gold;
+  }
 }
 .title,
 .date,
@@ -26,9 +25,6 @@
   font-size: 2.7em;
   margin: 10% 0% 2.5% 5%;
 }
-.newContainer h2 {
-  color: gold;
-}
 .content {
   font-size: 1.8em;
   line-height: 1.5;
@@ -37,18 +33,29 @@
   display: flex;
   align-items: center;
   margin-bottom: 1em;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    background: unset;
+    margin-left: 0.5em;
+  }
+  figure {
+    width: 1.5em;
+    height: 1.5em;
+  }
 }
-.autorContainer figure img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  background: unset;
-  margin-left: 0.5em;
-}
-.autorContainer figure {
-  width: 1.5em;
-  height: 1.5em;
-}
+// .autorContainer figure img {
+//   height: 100%;
+//   width: 100%;
+//   object-fit: contain;
+//   background: unset;
+//   margin-left: 0.5em;
+// }
+// .autorContainer figure {
+//   width: 1.5em;
+//   height: 1.5em;
+// }
 .imgContainer {
   width: 470px;
   margin: 1em 3em;
@@ -95,9 +102,14 @@
   font-size: 1.8em;
   font-weight: 600;
 }
+.textContainer {
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin: 0;
+}
 /* .linkNews {
-    font-size: 2em;
-    font-weight: 600;
+  font-size: 2em;
+  font-weight: 600;
 } */
 .youtubeVideo {
   width: 854px;
@@ -189,7 +201,6 @@
   }
   .content {
     font-size: 1.1em;
-    /* margin: 0 1em; */
   }
   .linksContainer {
     font-size: 1.1em;
@@ -204,4 +215,32 @@
     width: 393px;
     height: 220px;
   }
+  .textContainer {
+    font-size: 1.1em;
+    line-height: 1.5;
+  }
 }
+
+/* -----SHARE-SECTION------ */
+.socialIcons {
+  width: 2.5em;
+  height: 2.5em;
+  background: none;
+  margin: 0.5em 1em;
+}
+.shareSection {
+  padding: 1em 6.5em;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .shareSection {
+    padding: 1em 0 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* -----SHARE-SECTION------ */
