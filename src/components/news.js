@@ -63,6 +63,14 @@ class News extends React.Component {
           >
             <ExternArticle
               NroDeTitulo="titleNew titleNew1"
+              Redireccion="https://eetn3141.edu.ar/news/concurso/"
+              Titulo="Concurso de diseño para ExpoQuim"
+              ImageURL="https://i.imgur.com/Dekwf96m.png"
+              SubtituloInterno="Convocatoria"
+              Descripcion="Diseña, particpá y ganate premios buenisimos"
+            />
+            <ExternArticle
+              NroDeTitulo="titleNew titleNew1"
               Redireccion="https://eetn3141.edu.ar/news/formulario/"
               Titulo="Encuesta acerca de pagina web"
               ImageURL="https://economipedia.com/wp-content/uploads/encuesta.jpg"
