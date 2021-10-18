@@ -19,7 +19,7 @@ class Noticia extends React.Component {
           cientifico , tecnologico, cultural y educativo.
         </p>
         <Photo
-          link="https://i.imgur.com/Dekwf96.png"
+          link="https://imgur.com/veJouOd.png"
           alt="Concurso de logo y imagen promocional"
         />
         <p className="textContainer">
