@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import 'variables.scss';
 /* --------------START-HERO----------- */
 // body {
 //   background: chartreuse  ;
@@ -93,7 +93,6 @@
   display: block;
   z-index: 1;
   position: absolute;
-  right: 1%;
   top: 50%;
   font-size: 30px;
 }
@@ -102,6 +101,7 @@
 }
 .carousel__siguiente {
   transform: rotate(180deg);
+  right: 1%;
 }
 .carousel__anterior:hover,
 .carousel__siguiente:hover {
@@ -150,7 +150,7 @@
   grid-auto-columns: 33.3%;
   width: auto;
   justify-items: center;
-/*   overflow-x: hidden; */
+  /*   overflow-x: hidden; */
   overflow-y: hidden;
   &::-webkit-scrollbar {
     display: none;
@@ -248,7 +248,7 @@
   }
   h2 {
     text-align: center;
-    font-family: "roboto";
+    font-family: 'roboto';
     font-size: 2.7em;
     text-shadow: 0px 3px 6px #000;
     margin: 0px 20% 0.7em;
