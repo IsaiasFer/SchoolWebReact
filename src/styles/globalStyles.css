@@ -157,11 +157,12 @@ footer {
   grid-template-areas:
     'contactSchool contactFafe'
     'copyright copyright';
-  /* width: 100vw; */
-  /* height: 300px; */
+  width: 100%;
   height: auto;
   background: gray;
   font-family: Roboto;
+  /* position: absolute;
+  bottom: 0; */
 }
 .contactSchool {
   grid-area: contactSchool;

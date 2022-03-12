@@ -16,6 +16,7 @@ class News extends React.Component {
     let afterBtn = this.afterBtn;
 
     let moveTo = 0;
+
     this.handleClickAfter = () => {
       let widthContainerNew = containerNews.current.clientWidth;
       let maxScroll =

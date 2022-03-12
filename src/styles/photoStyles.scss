@@ -1,11 +1,13 @@
 @import 'variables.scss';
 .content {
   background: $degradado;
+  min-height: 40vh;
 }
 .photos {
   column-count: 4;
   column-gap: 10px;
   padding: 0 90px 20px;
+  margin-top: 1em;
 
   figure {
     margin: 0;
@@ -24,24 +26,31 @@
     }
   }
 }
-button {
-  outline: none;
-  border: none;
-  color: white;
-  font-family: Segoe UI;
-  font-weight: 400;
-  margin: 0 1% 0 0;
-  background: #314d81;
-}
-button:hover {
-  background: #3297cb;
-}
-button:active {
-  background: #16162d;
-}
-.year2000 {
-  width: 50%;
-  height: 50%;
+.btnPhotosContent {
+  display: inline;
+  width: 100%;
+  height: 10vh;
+  padding-left: 3em;
+
+  button {
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-family: Segoe UI;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 1% 0 0;
+    background: #314d81;
+    padding: 1.5em;
+    border-radius: 100px;
+  }
+  button:hover {
+    background: #3297cb;
+  }
+  button:active {
+    background: #16162d;
+  }
 }
 .pageTitle {
   color: $azulOscuro;
@@ -57,6 +66,9 @@ button:active {
     font-size: 40px;
     padding: 0.5em 0 0.5em 1em;
   }
+  .btnPhotosContent {
+    padding-left: 2em;
+  }
 }
 @media screen and (max-width: 768px) {
   .photos {
@@ -64,6 +76,14 @@ button:active {
   }
   .pageTitle {
     padding: 0.5em 0 0.5em 0.5em;
+  }
+  .btnPhotosContent {
+    padding-left: 1em;
+    button {
+      padding: 1em;
+      font-size: 18px;
+      font-weight: bold;
+    }
   }
 }
 @media screen and (max-width: 767px) {
@@ -74,5 +94,26 @@ button:active {
 @media screen and (max-width: 450px) {
   .photos {
     column-count: 2;
+  }
+  .btnPhotosContent {
+    padding-left: 1em;
+    button {
+      padding: 1em;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .content {
+    min-height: 30vh;
+  }
+  .btnPhotosContent {
+    padding-left: 1em;
+    button {
+      padding: 1em;
+      font-size: 10px;
+      font-weight: bold;
+    }
   }
 }
