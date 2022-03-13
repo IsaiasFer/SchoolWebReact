@@ -64,6 +64,13 @@ class News extends React.Component {
           >
             <ExternArticle
               NroDeTitulo="titleNew titleNew1"
+              Redireccion="https://eetn3141.edu.ar/news/terminar-carrera/"
+              Titulo="Inscripciones para completar carrera 2022"
+              ImageURL="https://imgur.com/LpLlbIs.png"
+              SubtituloInterno="Este 14 de hasta el 23 comienzan las inscripciones para completar la carrera en la institucion"
+            />
+            <ExternArticle
+              NroDeTitulo="titleNew titleNew1"
               Redireccion="https://eetn3141.edu.ar/news/ganadores/"
               Titulo="Ganadores del concurso"
               ImageURL="https://imgur.com/QOlNv7D.jpeg"
