@@ -17,7 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "react-spa-prerender"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +50,7 @@
     "url": "https://github.com/IsaiasFer/SchoolWebReact/issues"
   },
   "devDependencies": {
+    "react-spa-prerender": "^1.0.14",
     "sass": "^1.42.1"
   }
 }
