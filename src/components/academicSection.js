@@ -180,23 +180,23 @@ export default class academicSection extends Component {
             ref={this.column1Container}
           >
             <div className="buttonsContainer">
-              <a
+              <button
                 id="openTitle "
                 onClick={(e) => this.handleClickContents(e, 0)}
                 className="titleAcademic btna"
                 ref={this.openTitle}
               >
                 Titulo
-              </a>
+              </button>
 
-              <a
+              <button
                 id="openStudyPlan"
                 onClick={(e) => this.handleClickContents(e, 1)}
                 className="studyPlan btna"
                 ref={this.openStudyPlan}
               >
                 Plan de estudio
-              </a>
+              </button>
 
               <button
                 id="openStudyProgram"

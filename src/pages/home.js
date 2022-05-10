@@ -8,7 +8,7 @@ import '../styles/landingStyles.scss';
 
 class Home extends React.Component {
 componentDidMount(){
-  document.title="Web E.E.T.N° 3141"
+  document.title="Escuela de Educacion Tecnica Nro. 3141"
 }
 
   componentWillUnmount() {

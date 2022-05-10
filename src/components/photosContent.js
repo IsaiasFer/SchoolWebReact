@@ -4,7 +4,7 @@ import '../styles/photoStyles.scss';
 function Photo(props) {
   return (
     <figure>
-      <img src={props.link} />
+      <img src={props.link} alt=""/>
     </figure>
   );
 }
@@ -94,7 +94,7 @@ function OldPhotos(props) {
   );
 }
 
-function _2021Photos(props) {
+function Photos2021(props) {
   if (!props._2021_Open) {
     return null;
   }
@@ -113,7 +113,7 @@ function _2021Photos(props) {
   );
 }
 
-function _2022Photos(props) {
+function Photos2022(props) {
   if (!props._2022_Open) {
     return null;
   }
@@ -142,11 +142,11 @@ class PhotosContent extends React.Component {
     this.setState({ _2021_Open: false });
     this.setState({ _2022_Open: false });
   };
-  active_2021Photos = () => {
+  activePhotos2021 = () => {
     this.setState({ _2021_Open: true });
     this.setState({ Old_Open: false, _2022_Open: false });
   };
-  active_2022Photos = () => {
+  activePhotos2022 = () => {
     this.setState({ _2022_Open: true });
     this.setState({ Old_Open: false, _2021_Open: false });
   };
@@ -156,13 +156,13 @@ class PhotosContent extends React.Component {
         <h1 className="pageTitle">Galería de Fotos</h1>
         <div className="btnPhotosContent">
           <button onClick={this.active_OldPhotos}>Fotos memorables</button>
-          <button onClick={this.active_2021Photos}>Ciclo 2021</button>
-          <button onClick={this.active_2022Photos}>Ciclo 2022</button>
+          <button onClick={this.activePhotos2021}>Ciclo 2021</button>
+          <button onClick={this.activePhotos2022}>Ciclo 2022</button>
           <br />
         </div>
         <OldPhotos Old_Open={this.state.Old_Open} />
-        <_2021Photos _2021_Open={this.state._2021_Open} />
-        <_2022Photos _2022_Open={this.state._2022_Open} />
+        <Photos2021 _2021_Open={this.state._2021_Open} />
+        <Photos2022 _2022_Open={this.state._2022_Open} />
       </section>
     );
   }

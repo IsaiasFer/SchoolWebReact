@@ -11,5 +11,3 @@ if (appContainer.hasChildNodes()) {
 } else {
   ReactDOM.render(<App />, appContainer);
 }
-
-const rootElement = document.getElementById("root");
