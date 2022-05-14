@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 class Footer extends React.Component {
   render() {
@@ -124,6 +124,7 @@ class Footer extends React.Component {
               href="https://www.facebook.com/FAFE-Desarrollo-Web-Salta-105478241592908"
               target="blank"
               className="facebookFafe"
+              aria-label="icono de facebook de FAFE"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -144,6 +145,7 @@ class Footer extends React.Component {
               href="https://twitter.com/FAFEdevelop"
               target="blank"
               className="twitter"
+              aria-label="Twiter de FAFE"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -160,7 +162,7 @@ class Footer extends React.Component {
                 />
               </svg>
             </a>
-            <a href="/" className="instagram">
+            <a href="/" className="instagram" aria-label="Instagram de FAFE">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="31.518"
@@ -176,7 +178,7 @@ class Footer extends React.Component {
                 />
               </svg>
             </a>
-            <a href="/" className="github">
+            <a href="/" className="github" aria-label="GitHub de FAFE">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="34.875"

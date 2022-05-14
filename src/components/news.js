@@ -43,6 +43,7 @@ class News extends React.Component {
             ref={previousBtn}
             onClick={this.handleClickPrevius}
             className="carousel__anterior"
+            aria-label='anterior pagina de noticias'
           >
             <i className="fas fa-chevron-left"></i>
           </button>
@@ -50,8 +51,10 @@ class News extends React.Component {
             ref={afterBtn}
             onClick={this.handleClickAfter}
             className="carousel__siguiente"
+            aria-label='siguiente página de noticias'
           >
             <i className="fas fa-chevron-left"></i>
+
           </button>
           <div className="titleNews">
             <h2>ULTIMAS NOVEDADES</h2>
@@ -65,7 +68,7 @@ class News extends React.Component {
               NroDeTitulo="titleNew"
               Redireccion="https://eetn3141.edu.ar/news/terminar-carrera/"
               Titulo="Inscripciones para completar carrera 2022"
-              ImageURL="https://imgur.com/F7KrxBT.jpg"
+              ImageURL="https://i.imgur.com/F7KrxBTl.jpg"
               SubtituloInterno="Desde el hasta el 23 de Marzo"
               Descripcion="Comienzan las inscripciones para completar la carrera en la institucion"
             />
@@ -97,7 +100,7 @@ class News extends React.Component {
               NroDeTitulo="titleNew"
               Redireccion="https://eetn3141.edu.ar/news/taller-arte-semilla-siembra/"
               Titulo="Taller de arte, semilla y siembra!"
-              ImageURL="https://i.imgur.com/L5xEq7C.jpg"
+              ImageURL="https://i.imgur.com/L5xEq7Cm.jpg"
               SubtituloInterno="Taller"
               Descripcion="te invitamos a participar de este evento!"
             />
@@ -105,7 +108,7 @@ class News extends React.Component {
               NroDeTitulo="titleNew"
               Redireccion="https://eetn3141.edu.ar/news/talleres-teatro-lectura/"
               Titulo="Maraton Nacional de Lectura y talleres"
-              ImageURL="https://imgur.com/KBbnF6O.jpg"
+              ImageURL="https://i.imgur.com/KBbnF6Om.jpg"
               SubtituloInterno="Talleres llevados a cabo el 24/09/21"
             />
             <ExternArticle

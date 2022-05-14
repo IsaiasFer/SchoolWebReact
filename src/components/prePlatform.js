@@ -43,7 +43,7 @@ class PrePlatform extends React.Component {
             <li>
               <button href="http://eet3141.ddns.net:8080/moodle/">
                 <a href="http://eet3141.ddns.net:8080/chamilo/">
-                  <img src="https://i.imgur.com/L0n8z2f.png" alt="" />
+                  <img src="https://i.imgur.com/RTmKkev.png" alt="" />
                 </a>
               </button>
             </li>
