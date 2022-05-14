@@ -1,9 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/app';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/app";
 
-import './styles/globalStyles.css';
+import "./styles/globalStyles.css";
 
-const appContainer = document.getElementById('app');
+const appContainer = document.getElementById("app");
 
-ReactDOM.render(<App />, appContainer);
+if (appContainer.hasChildNodes()) {
+  ReactDOM.hydrate(<App />, appContainer);
+} else {
+  ReactDOM.render(<App />, appContainer);
+}

@@ -15,11 +15,11 @@ class Hero extends React.Component {
             <img src="https://i.imgur.com/4x2WmgGh.jpg" alt="" />
           </figure>
         </div>
-        <h1>
+        <h2>
           BIENVENIDOS A LA ESCUELA DE
           <br />
           EDUCACION TECNICA N°3141
-        </h1>
+        </h2>
       </section>
     );
   }

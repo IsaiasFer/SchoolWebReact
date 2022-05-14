@@ -59,7 +59,7 @@ class Plataforma extends React.Component {
           <span href="/">Volver</span>
         </button>
         <div className="curses" id="curses">
-          <h1>Elige tu curso</h1>
+          <h3 className='title'>Elige tu curso</h3>
           <div className="cursesgrill">
             <Curso id={1} año={1} ciclo="b" />
             <Curso id={2} año={2} ciclo="b" />

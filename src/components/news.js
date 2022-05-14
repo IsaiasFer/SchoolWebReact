@@ -43,6 +43,7 @@ class News extends React.Component {
             ref={previousBtn}
             onClick={this.handleClickPrevius}
             className="carousel__anterior"
+            aria-label='anterior pagina de noticias'
           >
             <i className="fas fa-chevron-left"></i>
           </button>
@@ -50,11 +51,13 @@ class News extends React.Component {
             ref={afterBtn}
             onClick={this.handleClickAfter}
             className="carousel__siguiente"
+            aria-label='siguiente página de noticias'
           >
             <i className="fas fa-chevron-left"></i>
+
           </button>
           <div className="titleNews">
-            <h1>ULTIMAS NOVEDADES</h1>
+            <h2>ULTIMAS NOVEDADES</h2>
           </div>
           <div
             ref={containerNews}
@@ -62,21 +65,23 @@ class News extends React.Component {
             style={{ scrollBehavior: 'smooth' }}
           >
             <ExternArticle
-              NroDeTitulo="titleNew titleNew1"
+              NroDeTitulo="titleNew"
               Redireccion="https://eetn3141.edu.ar/news/terminar-carrera/"
               Titulo="Inscripciones para completar carrera 2022"
-              ImageURL="https://imgur.com/F7KrxBT.jpg"
-              SubtituloInterno="Este 14 de hasta el 23 comienzan las inscripciones para completar la carrera en la institucion"
+              ImageURL="https://i.imgur.com/F7KrxBTl.jpg"
+              SubtituloInterno="Desde el hasta el 23 de Marzo"
+              Descripcion="Comienzan las inscripciones para completar la carrera en la institucion"
             />
             <ExternArticle
-              NroDeTitulo="titleNew titleNew1"
+              NroDeTitulo="titleNew"
               Redireccion="https://eetn3141.edu.ar/news/ganadores/"
-              Titulo="Ganadores del concurso"
+              Titulo="Nuevo logo para la ExpoQuim"
               ImageURL="https://imgur.com/QOlNv7D.jpeg"
-              SubtituloInterno="El departamento de química eligió a los ganadores del concurso de diseño de la ExpQ"
+              SubtituloInterno="Estos son los ganadores por concurso"
+              Descripcion="El departamento de química eligió a los ganadores del concurso de diseño de la ExpQ"
             />
             <ExternArticle
-              NroDeTitulo="titleNew titleNew1"
+              NroDeTitulo="titleNew"
               Redireccion="https://eetn3141.edu.ar/news/concurso/"
               Titulo="Concurso de diseño para ExpoQuim"
               ImageURL="https://i.imgur.com/Dekwf96m.png"
@@ -84,7 +89,7 @@ class News extends React.Component {
               Descripcion="Diseña, particpá y ganate premios buenisimos"
             />
             <ExternArticle
-              NroDeTitulo="titleNew titleNew1"
+              NroDeTitulo="titleNew"
               Redireccion="https://eetn3141.edu.ar/news/formulario/"
               Titulo="Encuesta acerca de pagina web"
               ImageURL="https://economipedia.com/wp-content/uploads/encuesta.jpg"
@@ -92,29 +97,29 @@ class News extends React.Component {
               Descripcion="Encuesta de satisfaccion de pagina web"
             />
             <ExternArticle
-              NroDeTitulo="titleNew titleNew1"
+              NroDeTitulo="titleNew"
               Redireccion="https://eetn3141.edu.ar/news/taller-arte-semilla-siembra/"
               Titulo="Taller de arte, semilla y siembra!"
-              ImageURL="https://i.imgur.com/L5xEq7C.jpg"
+              ImageURL="https://i.imgur.com/L5xEq7Cm.jpg"
               SubtituloInterno="Taller"
               Descripcion="te invitamos a participar de este evento!"
             />
             <ExternArticle
-              NroDeTitulo="titleNew titleNew1"
+              NroDeTitulo="titleNew"
               Redireccion="https://eetn3141.edu.ar/news/talleres-teatro-lectura/"
               Titulo="Maraton Nacional de Lectura y talleres"
-              ImageURL="https://imgur.com/KBbnF6O.jpg"
+              ImageURL="https://i.imgur.com/KBbnF6Om.jpg"
               SubtituloInterno="Talleres llevados a cabo el 24/09/21"
             />
             <ExternArticle
-              NroDeTitulo="titleNew titleNew1"
+              NroDeTitulo="titleNew"
               Redireccion="https://eetn3141.edu.ar/news/preinscripciones-2022/"
               Titulo="Preinscripciones ingresantes 2022"
               ImageURL="https://imgur.com/bL7SrPk.jpg"
               SubtituloInterno="A partir del 01/10/21 estaran abietas las inscripciones para ingresantes del 2022"
             />
             <ExternArticle
-              NroDeTitulo="titleNew titleNew1"
+              NroDeTitulo="titleNew"
               Redireccion="https://eetn3141.edu.ar/news/mesa-examenes/"
               Titulo="Mesa de exámenes"
               ImageURL="https://imgur.com/jbvQHth.png"

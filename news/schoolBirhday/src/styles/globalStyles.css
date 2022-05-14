@@ -1,10 +1,7 @@
 /* * {
   border: RED 1px solid;
 } */
-/* body {
-  background: chartreuse;
-  z-index: 10;
-} */
+/* FUENTES */
 img {
   background: linear-gradient(
     135deg,
@@ -12,11 +9,13 @@ img {
     rgba(49, 49, 100, 1) 100%
   );
 }
+/* FUENTES */
 body {
   font-family: 'Barlow Condensed', sans-serif;
   margin: 0;
   color: white;
   scroll-behavior: smooth;
+  background: linear-gradient(135deg, #3297cb, #313164);
 }
 /* ----START-HEADER----- */
 header {
@@ -138,7 +137,7 @@ figure {
   text-decoration: none;
   margin-left: 7px;
 }
-.hero h2 {
+.hero h1 {
   position: absolute;
   margin-left: 1.88em;
   margin-top: 1.4em;
@@ -157,12 +156,11 @@ footer {
   grid-template-areas:
     'contactSchool contactFafe'
     'copyright copyright';
-  width: 100%;
+  /* width: 100vw; */
+  /* height: 300px; */
   height: auto;
   background: gray;
   font-family: Roboto;
-  /* position: absolute;
-  bottom: 0; */
 }
 .contactSchool {
   grid-area: contactSchool;
@@ -347,9 +345,6 @@ svg {
   color: #eeeeee;
   font-size: 24px;
 }
-.burguer-button svg {
-  width: 22px;
-}
 /* burguer-button-END*/
 /* START-RESPONSIVE */
 @media screen and (max-width: 1110px) {
@@ -357,7 +352,7 @@ svg {
     width: 6em;
     height: 6em;
   }
-  .hero h2 {
+  .hero h1 {
     font-size: 60px;
     margin-left: 1em;
   }
@@ -440,6 +435,9 @@ svg {
   .burguer-button {
     display: flex;
   }
+  .burguer-button {
+    display: flex;
+  }
   .list-ul {
     position: fixed;
     background: rgba(29, 37, 44, 0.8);
@@ -503,7 +501,7 @@ svg {
   }
 }
 @media screen and (max-width: 455px) {
-  .hero h2 {
+  .hero h1 {
     font-size: 45px;
     margin-left: 0.5em;
     margin-top: 0.6em;
@@ -535,7 +533,7 @@ svg {
     width: 3em;
     height: 3em;
   }
-  .hero h2 {
+  .hero h1 {
     margin-left: 0.5em;
     margin-top: 0.5em;
   }
@@ -546,7 +544,7 @@ svg {
   }
 }
 @media screen and (max-width: 345px) {
-  .hero h2 {
+  .hero h1 {
     font-size: 40px;
   }
 }

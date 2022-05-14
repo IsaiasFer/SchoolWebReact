@@ -6,15 +6,15 @@ class ExternArticle extends React.Component {
       <article className="new">
         <div className={this.props.NroDeTitulo}>
           <a className="linkNews" href={this.props.Redireccion}>
-            <h1>{this.props.Titulo}</h1>
+            <h3>{this.props.Titulo}</h3>
           </a>
         </div>
 
         <figure className="newImageContainer">
           <img src={this.props.ImageURL} alt="ARTICULO" className="newImagen" />
           <div className="layerNew">
-            <h2>{this.props.SubtituloInterno}</h2>
-            <p>{this.props.Descripcion}</p>
+            <h4>{this.props.SubtituloInterno}</h4>
+            <span>{this.props.Descripcion}</span>
           </div>
         </figure>
       </article>
