@@ -1,10 +1,10 @@
-import React from 'react';
-import '../styles/photoStyles.scss';
+import React from "react";
+import "../styles/photoStyles.scss";
 
 function Photo(props) {
   return (
     <figure>
-      <img src={props.link} alt=""/>
+      <img src={props.link} alt="" />
     </figure>
   );
 }
@@ -129,26 +129,179 @@ function Photos2022(props) {
     </section>
   );
 }
+function Promo22(props) {
+  if (!props.promo22) {
+    return null;
+  }
+  return (
+    <section className="photos">
+      <Photo link="https://i.imgur.com/9o6Xmcz.jpg" />
+      <Photo link="https://i.imgur.com/2y8rqnX.jpg" />
+      <Photo link="https://i.imgur.com/IAc3flh.jpg" />
+      <Photo link="https://i.imgur.com/36iZmmw.jpg" />
+    </section>
+  );
+}
+function TrabInt(props) {
+  if (!props.trabInt) {
+    return null;
+  }
+  return (
+    <section className="photos">
+      <Photo link="https://i.imgur.com/xjIBHBf.jpg" />
+      <Photo link="https://i.imgur.com/urRvQ57.jpg" />
+      <Photo link="https://i.imgur.com/2pZnty2.jpg" />
+      <Photo link="https://i.imgur.com/k2lk3gM.jpg" />
+      <Photo link="https://i.imgur.com/b12U077.jpg" />
+      <Photo link="https://i.imgur.com/MxK0yl7.jpg" />
+      <Photo link="https://i.imgur.com/nIUWy3D.jpg" />
+      <Photo link="https://i.imgur.com/0Jebvtb.jpg" />
+      <Photo link="https://i.imgur.com/WJjidhm.jpg" />
+      <Photo link="https://i.imgur.com/5mabYik.jpg" />
+      <Photo link="https://i.imgur.com/o4J4dWW.jpg" />
+      <Photo link="https://i.imgur.com/csekzTv.jpg" />
+    </section>
+  );
+}
+function AdqInv(props) {
+  if (!props.adqInv) {
+    return null;
+  }
+  return (
+    <section className="photos">
+      <Photo link="https://i.imgur.com/2JmuXKk.jpg" />
+      <Photo link="https://i.imgur.com/X8gmXsT.jpg" />
+      <Photo link="https://i.imgur.com/TXX2WJA.jpg" />
+      <Photo link="https://i.imgur.com/pwovfj9.jpg" />
+      <Photo link="https://i.imgur.com/dlbx8Uc.jpg" />
+      <Photo link="https://i.imgur.com/I2CZS8o.jpg" />
+      <Photo link="https://i.imgur.com/bsGIhZe.jpg" />
+      <Photo link="https://i.imgur.com/g3JUmko.jpg" />
+      <Photo link="https://i.imgur.com/aJF7k49.jpg" />
+    </section>
+  );
+}
+function Actev(props) {
+  if (!props.actev) {
+    return null;
+  }
+  return (
+    <section className="photos">
+      <Photo link="https://i.imgur.com/1UO2Vjr.jpg" />
+      <Photo link="https://i.imgur.com/Vwtjsav.jpg" />
+      <Photo link="https://i.imgur.com/sPluoLF.jpg" />
+      <Photo link="https://i.imgur.com/fDAyU99.jpg" />
+      <Photo link="https://i.imgur.com/tvfDaWm.jpg" />
+      <Photo link="https://i.imgur.com/BPRc1Eq.jpg" />
+      <Photo link="https://i.imgur.com/E57njJe.jpg" />
+      <Photo link="https://i.imgur.com/HjPoUf7.jpg" />
+      <Photo link="https://i.imgur.com/u9SSfWa.jpg" />
+      <Photo link="https://i.imgur.com/KfYz1l9.jpg" />
+      <Photo link="https://i.imgur.com/o9pJeoP.jpg" />
+      <Photo link="https://i.imgur.com/8SUPlzy.jpg" />
+      <Photo link="https://i.imgur.com/4bCoFgZ.jpg" />
+      <Photo link="https://i.imgur.com/D9ocnaZ.jpg" />
+      <Photo link="https://i.imgur.com/R2L3Fh5.jpg" />
+      <Photo link="https://i.imgur.com/btDV25m.jpg" />
+      <Photo link="https://i.imgur.com/IPmMpOK.jpg" />
+      <Photo link="https://i.imgur.com/IFgpcj7.jpg" />
+      <Photo link="https://i.imgur.com/wpXCm7y.jpg" />
+      <Photo link="https://i.imgur.com/xJW1cZk.jpg" />
+      <Photo link="https://i.imgur.com/qxQR3cN.jpg" />
+      <Photo link="https://i.imgur.com/15QqcQB.jpg" />
+      <Photo link="https://i.imgur.com/HIAsG12.jpg" />
+      <Photo link="https://i.imgur.com/AX6JJoR.jpg" />
+      <Photo link="https://i.imgur.com/7d7AyFk.jpg" />
+      <Photo link="https://i.imgur.com/X8rT3Fc.jpg" />
+      <Photo link="https://i.imgur.com/qRWNDAb.jpg" />
+      <Photo link="https://i.imgur.com/7vPuXiW.jpg" />
+      <Photo link="https://i.imgur.com/rdG1jRK.jpg" />
+    </section>
+  );
+}
 
 class PhotosContent extends React.Component {
   state = {
     Old_Open: false,
     _2021_Open: false,
     _2022_Open: false,
+    promo22: false,
+    adqInv: false,
+    trabInt: false,
+    actev: false,
   };
 
   active_OldPhotos = () => {
     this.setState({ Old_Open: true });
     this.setState({ _2021_Open: false });
     this.setState({ _2022_Open: false });
+    this.setState({ promo22: false });
   };
   activePhotos2021 = () => {
     this.setState({ _2021_Open: true });
-    this.setState({ Old_Open: false, _2022_Open: false });
+    this.setState({
+      Old_Open: false,
+      _2022_Open: false,
+      promo22: false,
+      adqInv: false,
+      trabInt: false,
+      actev: false,
+    });
   };
   activePhotos2022 = () => {
     this.setState({ _2022_Open: true });
-    this.setState({ Old_Open: false, _2021_Open: false });
+    this.setState({
+      Old_Open: false,
+      _2021_Open: false,
+      promo22: false,
+      actev: false,
+      adqInv: false,
+      trabInt: false,
+    });
+  };
+  activePromo2022 = () => {
+    this.setState({ promo22: true });
+    this.setState({
+      Old_Open: false,
+      _2021_Open: false,
+      _2022_Open: false,
+      trabInt: false,
+      adqInv: false,
+      actev: false,
+    });
+  };
+  activeActev = () => {
+    this.setState({ actev: true });
+    this.setState({
+      Old_Open: false,
+      _2021_Open: false,
+      _2022_Open: false,
+      promo22: false,
+      adqInv: false,
+      trabInt: false,
+    });
+  };
+  activeTrabInt = () => {
+    this.setState({ trabInt: true });
+    this.setState({
+      Old_Open: false,
+      _2021_Open: false,
+      _2022_Open: false,
+      promo22: false,
+      adqInv: false,
+      actev:false,
+    });
+  };
+  activeAdqInv = () => {
+    this.setState({ adqInv: true });
+    this.setState({
+      Old_Open: false,
+      _2021_Open: false,
+      _2022_Open: false,
+      promo22: false,
+      trabInt: false,
+      actev: false,
+    });
   };
   render() {
     return (
@@ -158,11 +311,19 @@ class PhotosContent extends React.Component {
           <button onClick={this.active_OldPhotos}>Fotos memorables</button>
           <button onClick={this.activePhotos2021}>Ciclo 2021</button>
           <button onClick={this.activePhotos2022}>Ciclo 2022</button>
+          {/* <button onClick={this.activePromo2022}>Promo 22</button> */}
+          <button onClick={this.activeActev}>Actos y Eventos</button>
+          <button onClick={this.activeAdqInv}>Adquisiciones e Inversiones</button>
+          <button onClick={this.activeTrabInt}>Acciones de trabajo e Integración Institucional </button>
           <br />
         </div>
         <OldPhotos Old_Open={this.state.Old_Open} />
         <Photos2021 _2021_Open={this.state._2021_Open} />
         <Photos2022 _2022_Open={this.state._2022_Open} />
+        <Promo22 promo22={this.state.promo22} />
+        <TrabInt trabInt={this.state.trabInt} />
+        <Actev actev={this.state.actev} />
+        <AdqInv adqInv={this.state.adqInv} />
       </section>
     );
   }

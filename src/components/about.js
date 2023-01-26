@@ -10,7 +10,7 @@ class About extends React.Component {
         <div className="abouTextContainer">
           <h4>¿QUIENES SOMOS?</h4>
           <p>
-            Somos una escuela de Educación Técnica creada el 6 de abril de 1976, Nuestra orientación es la química, y somos grandes prescursores de jovenes en la comunidad
+            Somos una escuela de Educación Técnica creada el 6 de abril de 1976, Nuestra orientación es la química, y somos grandes precursores de jovenes en la comunidad
           </p>
         </div>
       </section>
