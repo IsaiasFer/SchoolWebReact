@@ -66,6 +66,14 @@ class News extends React.Component {
           >
             <ExternArticle
               NroDeTitulo="titleNew"
+              Redireccion="https://eetn3141.edu.ar/news/cronograma2023/"
+              Titulo="Cronograma 2023"
+              ImageURL="https://i.imgur.com/8t1qHUs.jpg"
+              SubtituloInterno="Actividades antes de inicio de clases"
+              Descripcion="Enterate que actividades van a haber en la escuela desde el 7 de Febrero"
+            />
+            <ExternArticle
+              NroDeTitulo="titleNew"
               Redireccion="https://eetn3141.edu.ar/news/terminar-carrera/"
               Titulo="Inscripciones para completar carrera 2022"
               ImageURL="https://i.imgur.com/F7KrxBTl.jpg"
