@@ -4,7 +4,7 @@
   grid-template-columns: 30% 60% 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: 'column1Container column2Container .';
-  height: 90vh;
+ /*  height: 90vh; */
   width: 100%;
   background: linear-gradient(
     135deg,
@@ -47,12 +47,13 @@
   }
 }
 .column1Container {
+  align-self: start;
   display: grid;
   grid-area: column1Container;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: 'buttonsContainer';
-  height: 90vh;
+  height: 100%;
   width: 100%;
   background: linear-gradient(
     135deg,
@@ -60,7 +61,6 @@
     rgba(49, 49, 100, 1) 100%
   );
   justify-items: center;
-  align-items: center;
   color: white;
   font-family: Segoe UI;
   font-weight: 400;
@@ -175,7 +175,6 @@
   }
 }
 .optionsStudyProgramContent {
-  height: 10%;
   width: auto;
   button {
     background: rgba(49, 49, 100, 1);
