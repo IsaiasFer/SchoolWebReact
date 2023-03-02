@@ -45,6 +45,15 @@
     color: rgb(63, 190, 233);
     background: #16162d;
   }
+  .noExiste{
+      background: gray;
+      color: black;
+      text-decoration: none;
+      cursor: unset;
+      &:hover{
+        background: gray;
+      }
+  }
 }
 .column1Container {
   align-self: start;
@@ -291,13 +300,16 @@
     overflow-y: scroll;
     align-content: flex-start;
     p a {
+      color: rgb(63, 190, 233);
+      border-radius: 1em;
       outline: none;
-      border: none;
-      color: revert;
       font-family: Barlow Condensed;
       font-weight: 500;
       font-size: 22px;
       cursor: pointer;
+      text-decoration: none;
+    text-align: center;
+    padding: 0 5px 0;
     }
   }
   .infoTeachersContent {

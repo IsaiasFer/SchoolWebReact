@@ -311,63 +311,63 @@ export default class academicSection extends Component {
 
                 <Asignatura
                   nombre="Matematica I"
-                  programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CB/MATEMATICAI2020.pdf"
+                  programa="../documentos/programas/MATEMATICAI2020.pdf"
                 />
                 <Asignatura
                   nombre="Dibujo Técnico I"
-                  programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CB/DIBUJOTECNICOI2020.pdf"
+                  programa="../documentos/programas/DIBUJOTECNICOI2020.pdf"
                 />
                 <Asignatura
                   nombre="Ciencias Biologicas I"
-                  programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CB/CIENCIASBIOLOGICASI2020.pdf"
+                  programa="../documentos/programas/CIENCIASBIOLOGICASI2020.pdf"
                 />
                 <Asignatura
                   nombre="Educación Física I"
-                  programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CB/EDUCACIONFISICAI2020.pdf"
+                  programa="../documentos/programas/EDUCACIONFISICAI2020.pdf"
                 />
                 <Asignatura
                   nombre="Fisicoquímica"
-                  programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CB/FISICOQUIMICA2020.pdf"
+                  programa="../documentos/programas/FISICOQUIMICA2020.pdf"
                 />
                 <Asignatura
                   nombre="Geografía I"
-                  programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CB/GEOGRAFIAI2020.pdf"
+                  programa="../documentos/programas/GEOGRAFIAI2020.pdf"
                 />
                 <Asignatura
                   nombre="Lengua Extranjera I (Ingles)"
-                  programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CB/LENGUAEXTRANJERAI-INGLES2020.pdf"
+                  programa="../documentos/programas/LENGUAEXTRANJERAI-INGLES2020.pdf"
                 />
                 <Asignatura
                   nombre="Lengua I"
-                  programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CB/LENGUAI2020.pdf"
+                  programa="../documentos/programas/LENGUAI2020.pdf"
                 />
                 <Asignatura
                   nombre="Tecnología I"
-                  programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CB/TECNOLOGIAI2020.pdf"
+                  programa="../documentos/programas/TECNOLOGIAI2020.pdf"
                 />
                 <Asignatura
                   nombre="Educación Artística I"
-                  programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CB/word/ARTISTICAI2020.docx"
+                  programa="../documentos/programas/ARTISTICAI2020.docx"
                 />
                 <Asignatura
                   nombre="Formación Ética y Ciudadana I"
-                  programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CB/feyc1cb2021.pdf"
+                  programa="../documentos/programas/feyc1cb2021.pdf"
                 />
                 <Asignatura
                   nombre="Taller Preprofesional I: Ajuste y Hojalatería "
-                  programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CB/TPI-AJUSTEYHOJALATERIA2020.pdf"
+                  programa="../documentos/programas/TPI-AJUSTEYHOJALATERIA2020.pdf"
                 />
                 <Asignatura
                   nombre="Taller Preprofesional I: Carpintería"
-                  programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CB/TPI-CARPINTERIA2020.pdf"
+                  programa="../documentos/programas/TPI-CARPINTERIA2020.pdf"
                 />
                 <Asignatura
                   nombre="Taller Preprofesional I: Electricidad"
-                  programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CB/TPI-ELECTRICIDAD2020.pdf"
+                  programa="../documentos/programas/TPI-ELECTRICIDAD2020.pdf"
                 />
                 <Asignatura
                   nombre="Historia I"
-                  programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CB/historiaI2021.pdf"
+                  programa="../documentos/programas/historiaI2021.pdf"
                 />
               </div>
 
@@ -378,22 +378,22 @@ export default class academicSection extends Component {
               >
                 <h1>Segundo Año Ciclo Basico </h1>
 
-                <Asignatura nombre="Ciencias Biológicas" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CB/CIENCIASBIOLOGICASII2020.pdf" />
-                <Asignatura nombre="Educación Física" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CB/EDUCACIONFISICAII2020.pdf" />
-                <Asignatura nombre="Física I" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CB/FISICAI2020.pdf" />
-                <Asignatura nombre="Lengua Extranjera II (Inglés)" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CB/LENGUAEXTRANJERAII-INGLES2020.pdf" />
-                <Asignatura nombre="Lengua II" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CB/LENGUAII2020.pdf" />
-                <Asignatura nombre="Dibujo Técnico II" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CB/DIBUJOTECNICOII2020.pdf" />
-                <Asignatura nombre="Química" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CB/QUIMICA2020.pdf" />
-                <Asignatura nombre="Taller Preprofesional II: Métodos y Técnicas de Laboratorio" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CB/word/MyTL2021.docx" />
-                <Asignatura nombre="Educación Artística II" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CB/word/ARTISTICAII2020.docx" />
-                <Asignatura nombre="Formación Ética y Ciudadana II" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CB/feyc2cb2021.pdf" />
-                <Asignatura nombre="Tecnología de la Comunicación y de la Información" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CB/word/TIC2021.docx" />
-                <Asignatura nombre="Geografía II" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CB/geografiaII2021.pdf" />
-                <Asignatura nombre="Taller Preprofesional II: Herrería" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CB/word/TPII-HERRERIA2020.docx" />
-                <Asignatura nombre="Historia II" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CB/historiaII2021.pdf" />
-                <Asignatura nombre="Taller Preprofesional: Electricidad y Electrónica" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CB/TPIIEE2021.pdf" />
-                <Asignatura nombre="Matemática (No disponible)" programa="" />
+                <Asignatura nombre="Ciencias Biológicas" programa="../documentos/programas/CIENCIASBIOLOGICASII2020.pdf" />
+                <Asignatura nombre="Educación Física" programa="../documentos/programas/EDUCACIONFISICAII2020.pdf" />
+                <Asignatura nombre="Física I" programa="../documentos/programas/FISICAI2020.pdf" />
+                <Asignatura nombre="Lengua Extranjera II (Inglés)" programa="../documentos/programas/LENGUAEXTRANJERAII-INGLES2020.pdf" />
+                <Asignatura nombre="Lengua II" programa="../documentos/programas/LENGUAII2020.pdf" />
+                <Asignatura nombre="Dibujo Técnico II" programa="../documentos/programas/DIBUJOTECNICOII2020.pdf" />
+                <Asignatura nombre="Química" programa="../documentos/programas/QUIMICA2020.pdf" />
+                <Asignatura nombre="Taller Preprofesional II: Métodos y Técnicas de Laboratorio" programa="../documentos/programas/MyTL2021.docx" />
+                <Asignatura nombre="Educación Artística II" programa="../documentos/programas/ARTISTICAII2020.docx" />
+                <Asignatura nombre="Formación Ética y Ciudadana II" programa="../documentos/programas/feyc2cb2021.pdf" />
+                <Asignatura nombre="Tecnología de la Comunicación y de la Información" programa="../documentos/programas/TIC2021.docx" />
+                <Asignatura nombre="Geografía II" programa="../documentos/programas/geografiaII2021.pdf" />
+                <Asignatura nombre="Taller Preprofesional II: Herrería" programa="../documentos/programas/TPII-HERRERIA2020.docx" />
+                <Asignatura nombre="Historia II" programa="../documentos/programas/historiaII2021.pdf" />
+                <Asignatura nombre="Taller Preprofesional: Electricidad y Electrónica" programa="../documentos/programas/TPIIEE2021.pdf" />
+                <Asignatura nombre="Matemática" programa="" />
               </div>
 
               <div
@@ -403,20 +403,20 @@ export default class academicSection extends Component {
               >
                 <h1>Primer Año Ciclo Superior </h1>
 
-                <Asignatura nombre="Biología Celular" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CS/BIOLOGIACELULAR2020.pdf" />
-                <Asignatura nombre="Educación Física III" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CS/EDUCACIONFISICAIII2020.pdf" />
-                <Asignatura nombre="Física II" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CS/FISICAII2020.pdf" />
-                <Asignatura nombre="Formación Ética y Ciudadana III" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CS/FORMACIONETICAYCIUDADANAIII.pdf" />
-                <Asignatura nombre="Lengua Extranjera III (Inglés)" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CS/LENGUAEXTRANJERAIII-INGLES2020.pdf" />
-                <Asignatura nombre="Lengua III" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CS/LENGUAIII2020.pdf" />
-                <Asignatura nombre="Química General I" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CS/QUIMICAGENERALI2020.pdf" />
-                <Asignatura nombre="Representación Gráfica e Interpretaciónn de Planos Industriales" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CS/REPRESENTACIONGRAFICAEINTERPRETACIONDEPLANOSINDUSTRIALES2020.pdf" />
-                <Asignatura nombre="Matemática III" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CS/word/MATEMATICAIII2020.docx" />
-                <Asignatura nombre="Taller Preprofesional III: Técnicas y Ensayos de Laboratorio y Física Experimental" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CS/tyedlfe1cs2021.pdf" />
-                <Asignatura nombre="Historia III" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CS/historiaIII2021.pdf" />
-                <Asignatura nombre="Tecnología de los Materiales I" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CS/TDLMI2019.pdf" />
-                <Asignatura nombre="Geografía III" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CS/GEOGRAFIAIII2019.pdf" />
-                <Asignatura nombre="Métodos y Técnicas de laboratorio" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS1CS/MYTDL2019.pdf" />
+                <Asignatura nombre="Biología Celular" programa="../documentos/programas/BIOLOGIACELULAR2020.pdf" />
+                <Asignatura nombre="Educación Física III" programa="../documentos/programas/EDUCACIONFISICAIII2020.pdf" />
+                <Asignatura nombre="Física II" programa="../documentos/programas/FISICAII2020.pdf" />
+                <Asignatura nombre="Formación Ética y Ciudadana III" programa="../documentos/programas/FORMACIONETICAYCIUDADANAIII.pdf" />
+                <Asignatura nombre="Lengua Extranjera III (Inglés)" programa="../documentos/programas/LENGUAEXTRANJERAIII-INGLES2020.pdf" />
+                <Asignatura nombre="Lengua III" programa="../documentos/programas/LENGUAIII2020.pdf" />
+                <Asignatura nombre="Química General I" programa="../documentos/programas/QUIMICAGENERALI2020.pdf" />
+                <Asignatura nombre="Representación Gráfica e Interpretaciónn de Planos Industriales" programa="../documentos/programas/REPRESENTACIONGRAFICAEINTERPRETACIONDEPLANOSINDUSTRIALES2020.pdf" />
+                <Asignatura nombre="Matemática III" programa="../documentos/programas/MATEMATICAIII2020.docx" />
+                <Asignatura nombre="Taller Preprofesional III: Técnicas y Ensayos de Laboratorio y Física Experimental" programa="../documentos/programas/tyedlfe1cs2021.pdf" />
+                <Asignatura nombre="Historia III" programa="../documentos/programas/historiaIII2021.pdf" />
+                <Asignatura nombre="Tecnología de los Materiales I" programa="../documentos/programas/TDLMI2019.pdf" />
+                <Asignatura nombre="Geografía III" programa="../documentos/programas/GEOGRAFIAIII2019.pdf" />
+                <Asignatura nombre="Métodos y Técnicas de laboratorio" programa="../documentos/programas/MYTDL2019.pdf" />
               </div>
 
               <div
@@ -425,18 +425,18 @@ export default class academicSection extends Component {
                 ref={this.secondYearContentCS}
               >
                 <h1>Segundo Año Ciclo Superior </h1>
-                <Asignatura nombre="Educación Física IV" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CS/EDUCACIONFISICAIV2020.pdf" />
-                <Asignatura nombre="Filosofía" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CS/FILOSOFIA2020.pdf" />
-                <Asignatura nombre="Física III" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CS/FISICAIII2020.pdf" />
-                <Asignatura nombre="Lengua Extranjera III (Inglés Técnico I)" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CS/LENGUAEXTRANJERAIII-INGLES2020.pdf" />
-                <Asignatura nombre="Lengua y Literatura I" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CS/LENGUAYLITERATURAI2020.pdf" />
-                <Asignatura nombre="Microbiología" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CS/MICROBIOLOGIA2020.pdf" />
-                <Asignatura nombre="Química General II" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CS/QUIMICAGENERALII2020.pdf" />
-                <Asignatura nombre="Química Inorgánica" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CS/QUIMICAINORGANICA2020.pdf" />
-                <Asignatura nombre="Tecnología de los Materiales II" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CS/TECNOLOGIADELOSMATERIALESII2020.pdf" />
-                <Asignatura nombre="Teoría del Diseño y Sistemas" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CS/TEORIADELDISENOYSISTEMAS2020.pdf" />
-                <Asignatura nombre="Termodinámica" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CS/TERMODINAMICA2020.pdf" />
-                <Asignatura nombre="Análisis Matemático" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS2CS/ANALISIS%20MATEMATICO2CS.pdf" />
+                <Asignatura nombre="Educación Física IV" programa="../documentos/programas/EDUCACIONFISICAIV2020.pdf" />
+                <Asignatura nombre="Filosofía" programa="../documentos/programas/FILOSOFIA2020.pdf" />
+                <Asignatura nombre="Física III" programa="../documentos/programas/FISICAIII2020.pdf" />
+                <Asignatura nombre="Lengua Extranjera III (Inglés Técnico I)" programa="../documentos/programas/LENGUAEXTRANJERAIII-INGLES2020.pdf" />
+                <Asignatura nombre="Lengua y Literatura I" programa="../documentos/programas/LENGUAYLITERATURAI2020.pdf" />
+                <Asignatura nombre="Microbiología" programa="../documentos/programas/MICROBIOLOGIA2020.pdf" />
+                <Asignatura nombre="Química General II" programa="../documentos/programas/QUIMICAGENERALII2020.pdf" />
+                <Asignatura nombre="Química Inorgánica" programa="../documentos/programas/QUIMICAINORGANICA2020.pdf" />
+                <Asignatura nombre="Tecnología de los Materiales II" programa="../documentos/programas/TECNOLOGIADELOSMATERIALESII2020.pdf" />
+                <Asignatura nombre="Teoría del Diseño y Sistemas" programa="../documentos/programas/TEORIADELDISENOYSISTEMAS2020.pdf" />
+                <Asignatura nombre="Termodinámica" programa="../documentos/programas/TERMODINAMICA2020.pdf" />
+                <Asignatura nombre="Análisis Matemático" programa="../documentos/programas/ANALISIS%20MATEMATICO2CS.pdf" />
               </div>
 
               <div
@@ -445,18 +445,18 @@ export default class academicSection extends Component {
                 ref={this.thirdYearContentCS}
               >
                 <h1> Tercero Año Ciclo Superior </h1>
-                <Asignatura nombre="Bromatología" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS3CS/BROMATOLOGIA2020.pdf" />
-                <Asignatura nombre="Educación Física V" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS3CS/EDUCACIONFISICAV2020.pdf" />
-                <Asignatura nombre="Fundamentos de los Procesos Químicos" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS3CS/FUNDAMENTOSDELOSPROCESOSQUIMICOS2020.pdf" />
-                <Asignatura nombre="Lengua Extranjera IV (Inglés Técnico II)" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS3CS/LENGUAEXTRANJERAIV-INGLESTECNICOI2020.pdf" />
-                <Asignatura nombre="Lengua y Literatura II" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS3CS/LENGUAYLITERATURAII2020.pdf" />
-                <Asignatura nombre="Probabilidad y Estadistica" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS3CS/PROBAILIDADYESTADISTICA2020.pdf" />
-                <Asignatura nombre="Química Analítica I" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS3CS/QUIMICAANALITICAI2020.pdf" />
-                <Asignatura nombre="Química Orgánica I" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS3CS/QUIMICAORGANICAI2020.pdf" />
-                <Asignatura nombre="Operaciones Unitarias" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS3CS/OperacionesUnitarias2021.pdf" />
-                <Asignatura nombre="Ética y Deontología" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS3CS/eydp3cs2021.pdf" />
-                <Asignatura nombre="Química Industrial II" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS3CS/word/QuimicaIndustrial2021.docx" />
-                <Asignatura nombre="Prácticas Profesionalizantes I (No Disponible)" programa="" />
+                <Asignatura nombre="Bromatología" programa="../documentos/programas/BROMATOLOGIA2020.pdf" />
+                <Asignatura nombre="Educación Física V" programa="../documentos/programas/EDUCACIONFISICAV2020.pdf" />
+                <Asignatura nombre="Fundamentos de los Procesos Químicos" programa="../documentos/programas/FUNDAMENTOSDELOSPROCESOSQUIMICOS2020.pdf" />
+                <Asignatura nombre="Lengua Extranjera IV (Inglés Técnico II)" programa="../documentos/programas/LENGUAEXTRANJERAIV-INGLESTECNICOI2020.pdf" />
+                <Asignatura nombre="Lengua y Literatura II" programa="../documentos/programas/LENGUAYLITERATURAII2020.pdf" />
+                <Asignatura nombre="Probabilidad y Estadistica" programa="../documentos/programas/PROBAILIDADYESTADISTICA2020.pdf" />
+                <Asignatura nombre="Química Analítica I" programa="../documentos/programas/QUIMICAANALITICAI2020.pdf" />
+                <Asignatura nombre="Química Orgánica I" programa="../documentos/programas/QUIMICAORGANICAI2020.pdf" />
+                <Asignatura nombre="Operaciones Unitarias" programa="../documentos/programas/OperacionesUnitarias2021.pdf" />
+                <Asignatura nombre="Ética y Deontología" programa="../documentos/programas/eydp3cs2021.pdf" />
+                <Asignatura nombre="Química Industrial II" programa="../documentos/programas/QuimicaIndustrial2021.docx" />
+                <Asignatura nombre="Prácticas Profesionalizantes I" programa="" />
               </div>
 
               <div
@@ -465,15 +465,15 @@ export default class academicSection extends Component {
                 ref={this.fourthYearContentCS}
               >
                 <h1>Cuarto Año Ciclo Superior </h1>
-                <Asignatura nombre="Higiene y seguridad Industrial" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS4CS/HIGIENEYSEGURIDADINDUSTRIAL2020.pdf" />
-                <Asignatura nombre="Química Ambiental" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS4CS/QUIMICAAMBIENTAL2020.pdf" />
-                <Asignatura nombre="Química Analítica II" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS4CS/QUIMICAANALITICAII2020.pdf" />
-                <Asignatura nombre="Química Orgánica II" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS4CS/QUIMICAORGANICAII2020.pdf" />
-                <Asignatura nombre="Química Industrial II" programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS4CS/word/QcaIndII2021.docx" />
-                <Asignatura nombre="Procesos Productivos " programa="http://eet3141.ddns.net/Web3141/Archivos/Programas2020/PROGRAMAS4CS/PROCESOS%20PRODUCTVOS%204CS.pdf" />
-                <Asignatura nombre="Marco Jurídico de los procesos productivos (No Disponible)" programa="" />
+                <Asignatura nombre="Higiene y seguridad Industrial" programa="../documentos/programas/HIGIENEYSEGURIDADINDUSTRIAL2020.pdf" />
+                <Asignatura nombre="Química Ambiental" programa="../documentos/programas/QUIMICAAMBIENTAL2020.pdf" />
+                <Asignatura nombre="Química Analítica II" programa="../documentos/programas/QUIMICAANALITICAII2020.pdf" />
+                <Asignatura nombre="Química Orgánica II" programa="../documentos/programas/QUIMICAORGANICAII2020.pdf" />
+                <Asignatura nombre="Química Industrial II" programa="../documentos/programas/QcaIndII2021.docx" />
+                <Asignatura nombre="Procesos Productivos" programa="../documentos/programas/PROCESOS%20PRODUCTVOS%204CS.pdf" />
+                <Asignatura nombre="Marco Jurídico de los procesos productivos" programa="" />
                 <Asignatura nombre="Organización y Gestión de la producción" programa="" />
-                <Asignatura nombre="Prácticas Profesionalizantes" programa="" />
+                <Asignatura nombre="Prácticas Profesionalizantes II" programa="" />
               </div>
             </div>
 
@@ -573,7 +573,7 @@ export default class academicSection extends Component {
                 </p>
                 <p>
                   Descargar:{" "}
-                  <a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/Cartilla_Ingresantes2019.doc">
+                  <a href="http://eet3141.ddns.net/Web3141/Prensa/Profesores/Cartilla_Ingresantes2019.doc" download>
                     Cartilla Ingresantes 2019 (.doc se lee con Word)
                   </a>
                 </p>
