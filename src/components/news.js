@@ -74,14 +74,6 @@ class News extends React.Component {
             />
             <ExternArticle
               NroDeTitulo="titleNew"
-              Redireccion="https://eetn3141.edu.ar/news/terminar-carrera/"
-              Titulo="Inscripciones para completar carrera 2022"
-              ImageURL="https://i.imgur.com/F7KrxBTl.jpg"
-              SubtituloInterno="Desde el hasta el 23 de Marzo"
-              Descripcion="Comienzan las inscripciones para completar la carrera en la institucion"
-            />
-            <ExternArticle
-              NroDeTitulo="titleNew"
               Redireccion="https://eetn3141.edu.ar/news/ganadores/"
               Titulo="Nuevo logo para la ExpoQuim"
               ImageURL="https://imgur.com/QOlNv7D.jpeg"
@@ -118,13 +110,6 @@ class News extends React.Component {
               Titulo="Maraton Nacional de Lectura y talleres"
               ImageURL="https://i.imgur.com/KBbnF6Om.jpg"
               SubtituloInterno="Talleres llevados a cabo el 24/09/21"
-            />
-            <ExternArticle
-              NroDeTitulo="titleNew"
-              Redireccion="https://eetn3141.edu.ar/news/preinscripciones-2022/"
-              Titulo="Preinscripciones ingresantes 2022"
-              ImageURL="https://imgur.com/bL7SrPk.jpg"
-              SubtituloInterno="A partir del 01/10/21 estaran abietas las inscripciones para ingresantes del 2022"
             />
             <ExternArticle
               NroDeTitulo="titleNew"
